@@ -1,0 +1,28 @@
+name: pr
+
+on: pull_request
+
+jobs:
+  pr:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v3
+        with:
+          version: 9
+          run_install: |
+            - recursive: true
+              args: [--frozen-lockfile, --strict-peer-dependencies]
+
+      - name: Build
+        id: build
+        run: |
+          pnpm run build
+          echo "::notice title=🛠️ Build::Complete"
+
+      - name: Lint
+        id: lint
+        run: |
+          pnpm run lint
+          echo "::notice title=🧼️ Lint::Complete"
