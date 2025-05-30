@@ -17,15 +17,12 @@ export default function RootLayout({
   children: ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={cn(geist.className, "bg-background", "text-foreground")}
-    >
+    <html lang="en" className="bg-background font-sans text-foreground">
       <body>
         <SidebarProvider>
           <BrandHeader />
           <BrandSidebar />
-          <main className="mt-16 flex w-full justify-center">
+          <main className="flex w-full justify-center">
             <div className="container">{children}</div>
           </main>
           <Toaster />

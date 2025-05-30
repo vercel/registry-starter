@@ -80,7 +80,7 @@ export function ComponentCard({
                 {description ?? component.description}
               </CardDescription>
 
-              <div className="flex items-center gap-1 sm:ml-auto">
+              <div className="flex items-center gap-4 sm:ml-auto">
                 <TooltipProvider>
                   <Tooltip>
                     <TooltipContent className="font-mono">

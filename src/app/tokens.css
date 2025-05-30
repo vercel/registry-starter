@@ -34,8 +34,10 @@
   --sidebar-border: oklch(0.88 0.02 74.64);
   --sidebar-ring: oklch(0.52 0.13 144.17);
 
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: Geist, sans-serif;
+  --font-serif: Ancizar Serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-mono: Geist Mono, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
 
   --radius: 0.5rem;
 

@@ -1,33 +1,17 @@
 import { cn } from "@/lib/utils";
 import { Geist, Geist_Mono } from "next/font/google";
 import React, { type ReactNode } from "react";
+import "@/app/fonts.css";
 import "@/app/tokens.css";
 import "@/app/globals.css";
 
-const GeistSans = Geist({
-  subsets: ["latin"],
-  variable: "--font-geist-sans",
-});
-
-const GeistMono = Geist_Mono({
-  subsets: ["latin"],
-  variable: "--font-geist-mono",
-});
 export default function RootLayout({
   children,
 }: Readonly<{
   children: ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={cn(
-        GeistSans.variable,
-        GeistMono.variable,
-        "bg-background",
-        "text-foreground",
-      )}
-    >
+    <html lang="en" className={"bg-background font-sans text-foreground"}>
       <body>
         <main className="mt-16 flex w-full justify-center">
           <div className="container">{children}</div>
