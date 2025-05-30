@@ -10,6 +10,11 @@
       "description": "Brand themed styles using Tailwind and Shadcn/ui",
       "files": [
         {
+          "path": "src/app/fonts.css",
+          "type": "registry:file",
+          "target": "app/fonts.css"
+        },
+        {
           "path": "src/app/tokens.css",
           "type": "registry:file",
           "target": "app/tokens.css"
@@ -37,6 +42,11 @@
       "title": "Blank Starter",
       "description": "A blank application with all brand components and code",
       "files": [
+        {
+          "path": "src/app/fonts.css",
+          "type": "registry:file",
+          "target": "app/fonts.css"
+        },
         {
           "path": "src/app/tokens.css",
           "type": "registry:file",
@@ -91,6 +101,11 @@
       "description": "A dashboard application with your brand themed components",
       "files": [
         {
+          "path": "src/app/fonts.css",
+          "type": "registry:file",
+          "target": "app/fonts.css"
+        },
+        {
           "path": "src/app/tokens.css",
           "type": "registry:file",
           "target": "app/tokens.css"
@@ -135,6 +150,11 @@
       "title": "Store Starter",
       "description": "A store application with your brand themed components",
       "files": [
+        {
+          "path": "src/app/fonts.css",
+          "type": "registry:file",
+          "target": "app/fonts.css"
+        },
         {
           "path": "src/app/tokens.css",
           "type": "registry:file",
