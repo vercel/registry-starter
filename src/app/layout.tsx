@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Montserrat } from "next/font/google";
 import type { ReactNode } from "react";
 
 import { cn } from "@/lib/utils";
@@ -15,12 +15,17 @@ export const metadata: Metadata = {
 
 const GeistSans = Geist({
   subsets: ["latin"],
-  variable: "--font-geist-sans",
+  variable: "--font-sans",
 });
 
 const GeistMono = Geist_Mono({
   subsets: ["latin"],
-  variable: "--font-geist-mono",
+  variable: "--font-mono",
+});
+
+const MontserratSerif = Montserrat({
+  subsets: ["latin"],
+  variable: "--font-serif",
 });
 
 export default function RootLayout({
@@ -34,6 +39,7 @@ export default function RootLayout({
       className={cn(
         GeistSans.variable,
         GeistMono.variable,
+        MontserratSerif.variable,
         "bg-background text-foreground",
       )}
     >
