@@ -14,7 +14,6 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
-import { RegistryLogo } from "@/components/registry/registry-logo";
 import { ModeToggle } from "@/components/registry/theme-toggle";
 import { Button } from "@/components/ui/button";
 import {
@@ -74,18 +73,18 @@ export function RegistrySidebar() {
     if (searchTerm) {
       setFilteredUiItems(
         uiItems.filter((item) =>
-          item.title.toLowerCase().includes(searchTerm.toLowerCase()),
-        ),
+          item.title.toLowerCase().includes(searchTerm.toLowerCase())
+        )
       );
       setFilteredComponents(
         componentItems.filter((item) =>
-          item.title.toLowerCase().includes(searchTerm.toLowerCase()),
-        ),
+          item.title.toLowerCase().includes(searchTerm.toLowerCase())
+        )
       );
       setFilteredBlocks(
         blockItems.filter((item) =>
-          item.title.toLowerCase().includes(searchTerm.toLowerCase()),
-        ),
+          item.title.toLowerCase().includes(searchTerm.toLowerCase())
+        )
       );
     } else {
       setFilteredUiItems(uiItems);
@@ -99,7 +98,7 @@ export function RegistrySidebar() {
       <SidebarHeader className="border-b">
         <div className="flex items-center justify-between px-2 py-2">
           <Link href="/" className="flex min-w-0 items-center gap-2">
-            <RegistryLogo />
+            <p className="font-medium">Domino registry</p>
           </Link>
 
           <Button
