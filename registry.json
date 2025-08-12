@@ -8,13 +8,13 @@
       "type": "registry:style",
       "cssVars": {
         "light": {
-          "primary": "oklch(0.52 0.13 144.17)",
-          "primary-foreground": "oklch(1.0 0 0)",
+          "primary": "oklch(0.4744 0.256 297.4098)",
+          "primary-foreground": "oklch(1 0 0)",
           "radius": "0.5rem"
         },
         "dark": {
-          "primary": "oklch(0.52 0.13 144.17)",
-          "primary-foreground": "oklch(1.0 0 0)"
+          "primary": "oklch(0.922 0 0)",
+          "primary-foreground": "oklch(0.205 0 0)"
         }
       },
       "files": []
