@@ -44,30 +44,11 @@ on [ui.shadcn.com/docs](https://ui.shadcn.com/docs).
 #### MCP
 
 To use this registry with MCP, you must also edit [`registry.json`](./registry.json)'s first
-`registry-item` named `registry`. This `registry:style` item also contains your design tokens that can be used with MCP.
+`registry-item` named `theme`. This `registry:theme` item not only contains the tailwind configuration, but it also
+contains your design tokens / CSS variables.
 
-For example, it looks like this:
-
-```json
-    {
-      "name": "registry",
-      "type": "registry:style",
-      "cssVars": {
-        "light": {
-          "primary": "oklch(0.52 0.13 144.17)",
-          "primary-foreground": "oklch(1.0 0 0)",
-          "radius": "0.5rem",
-          ...
-        },
-        "dark": {
-          "primary": "oklch(0.52 0.13 144.17)",
-          "primary-foreground": "oklch(1.0 0 0)",
-          ...
-        }
-      },
-      "files": []
-    }
-```
+The `shadcn/ui` CLI's MCP command will use the entire `registy.json` file, so it must be put in the `/public` folder 
+with all of your `registry:item`s.  This will enable you to use your registry in tools like Cursor & Windsurf. 
 
 #### Fonts
 

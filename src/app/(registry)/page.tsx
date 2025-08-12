@@ -137,11 +137,11 @@ export default function Home() {
           <p className="mb-4 text-muted-foreground">
             Integrate this registry with AI IDEs using Model Context Protocol
             (MCP) using the following configuration. This utilizes this
-            Registry's style tokens and the Shadcn CLI. To ensure this works,
-            double check that the{" "}
+            Registry's theme tokens and CSS variables with the Shadcn CLI. To
+            ensure this works, double check that the{" "}
             <Link href="/r/registry.json">
               <code className="inline text-sm tabular-nums underline">
-                style:registry
+                style:theme
               </code>
             </Link>{" "}
             contains the same colors as your{" "}
