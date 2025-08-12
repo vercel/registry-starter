@@ -31,7 +31,7 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
-  --surface: oklch(0.98 0 0);
+  --surface: var(--background);
   --surface-foreground: var(--foreground);
   --code: var(--surface);
   --code-foreground: var(--surface-foreground);
@@ -74,8 +74,8 @@
   --sidebar-accent-foreground: oklch(0.65 0.12 144.31);
   --sidebar-border: oklch(0.22 0.02 74.64);
   --sidebar-ring: oklch(0.58 0.15 144.17);
-  --surface: oklch(0.2 0 0);
-  --surface-foreground: oklch(0.708 0 0);
+  --surface: var(--background);
+  --surface-foreground: var(--foreground);
   --code: var(--surface);
   --code-foreground: var(--surface-foreground);
   --code-highlight: oklch(0.27 0 0);
