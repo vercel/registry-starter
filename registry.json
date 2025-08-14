@@ -82,19 +82,14 @@
       },
       "files": [
         {
-          "path": "src/app/tokens.css",
-          "type": "registry:file",
-          "target": "app/tokens.css"
-        },
-        {
-          "path": "src/v0/globals.css",
-          "type": "registry:file",
+          "path": "src/app/globals.css",
+          "type": "registry:style",
           "target": "app/globals.css"
         },
         {
-          "path": "src/v0/tailwind.config.ts",
+          "path": "postcss.config.mjs",
           "type": "registry:file",
-          "target": "tailwind.config.ts"
+          "target": "postcss.config.mjs"
         }
       ]
     },
@@ -111,7 +106,7 @@
       ],
       "files": [
         {
-          "path": "src/v0/minimal-layout.tsx",
+          "path": "src/layouts/minimal-layout.tsx",
           "type": "registry:file",
           "target": "app/layout.tsx"
         },
@@ -135,7 +130,7 @@
       ],
       "files": [
         {
-          "path": "src/v0/shell-layout.tsx",
+          "path": "src/layouts/shell-layout.tsx",
           "type": "registry:file",
           "target": "app/layout.tsx"
         },
@@ -157,7 +152,7 @@
       ],
       "files": [
         {
-          "path": "src/v0/minimal-layout.tsx",
+          "path": "src/layouts/minimal-layout.tsx",
           "type": "registry:file",
           "target": "app/layout.tsx"
         },
@@ -188,7 +183,7 @@
           "type": "registry:component"
         },
         {
-          "path": "src/v0/shell-layout.tsx",
+          "path": "src/layouts/shell-layout.tsx",
           "type": "registry:file",
           "target": "app/layout.tsx"
         },
@@ -217,7 +212,7 @@
           "type": "registry:component"
         },
         {
-          "path": "src/v0/shell-layout.tsx",
+          "path": "src/layouts/shell-layout.tsx",
           "type": "registry:file",
           "target": "app/layout.tsx"
         },
@@ -245,7 +240,7 @@
           "type": "registry:component"
         },
         {
-          "path": "src/v0/minimal-layout.tsx",
+          "path": "src/layouts/minimal-layout.tsx",
           "type": "registry:file",
           "target": "app/layout.tsx"
         },
@@ -270,7 +265,7 @@
           "type": "registry:component"
         },
         {
-          "path": "src/v0/minimal-layout.tsx",
+          "path": "src/layouts/minimal-layout.tsx",
           "type": "registry:file",
           "target": "app/layout.tsx"
         },
@@ -297,7 +292,7 @@
           "type": "registry:component"
         },
         {
-          "path": "src/v0/minimal-layout.tsx",
+          "path": "src/layouts/minimal-layout.tsx",
           "type": "registry:file",
           "target": "app/layout.tsx"
         },
@@ -323,7 +318,7 @@
           "type": "registry:component"
         },
         {
-          "path": "src/v0/minimal-layout.tsx",
+          "path": "src/layouts/minimal-layout.tsx",
           "type": "registry:file",
           "target": "app/layout.tsx"
         },
@@ -352,7 +347,7 @@
           "type": "registry:lib"
         },
         {
-          "path": "src/v0/minimal-layout.tsx",
+          "path": "src/layouts/minimal-layout.tsx",
           "type": "registry:file",
           "target": "app/layout.tsx"
         }
@@ -369,7 +364,7 @@
       ],
       "files": [
         {
-          "path": "src/v0/minimal-layout.tsx",
+          "path": "src/layouts/minimal-layout.tsx",
           "type": "registry:file",
           "target": "app/layout.tsx"
         }
@@ -386,7 +381,7 @@
       ],
       "files": [
         {
-          "path": "src/v0/minimal-layout.tsx",
+          "path": "src/layouts/minimal-layout.tsx",
           "type": "registry:file",
           "target": "app/layout.tsx"
         }
@@ -403,7 +398,7 @@
       ],
       "files": [
         {
-          "path": "src/v0/minimal-layout.tsx",
+          "path": "src/layouts/minimal-layout.tsx",
           "type": "registry:file",
           "target": "app/layout.tsx"
         }
@@ -420,7 +415,7 @@
       ],
       "files": [
         {
-          "path": "src/v0/minimal-layout.tsx",
+          "path": "src/layouts/minimal-layout.tsx",
           "type": "registry:file",
           "target": "app/layout.tsx"
         }
@@ -437,7 +432,7 @@
       ],
       "files": [
         {
-          "path": "src/v0/minimal-layout.tsx",
+          "path": "src/layouts/minimal-layout.tsx",
           "type": "registry:file",
           "target": "app/layout.tsx"
         }
@@ -454,7 +449,7 @@
       ],
       "files": [
         {
-          "path": "src/v0/minimal-layout.tsx",
+          "path": "src/layouts/minimal-layout.tsx",
           "type": "registry:file",
           "target": "app/layout.tsx"
         }
@@ -471,7 +466,7 @@
       ],
       "files": [
         {
-          "path": "src/v0/minimal-layout.tsx",
+          "path": "src/layouts/minimal-layout.tsx",
           "type": "registry:file",
           "target": "app/layout.tsx"
         }
@@ -488,7 +483,7 @@
       ],
       "files": [
         {
-          "path": "src/v0/minimal-layout.tsx",
+          "path": "src/layouts/minimal-layout.tsx",
           "type": "registry:file",
           "target": "app/layout.tsx"
         }
@@ -505,7 +500,7 @@
       ],
       "files": [
         {
-          "path": "src/v0/minimal-layout.tsx",
+          "path": "src/layouts/minimal-layout.tsx",
           "type": "registry:file",
           "target": "app/layout.tsx"
         }
@@ -522,7 +517,7 @@
       ],
       "files": [
         {
-          "path": "src/v0/minimal-layout.tsx",
+          "path": "src/layouts/minimal-layout.tsx",
           "type": "registry:file",
           "target": "app/layout.tsx"
         }
@@ -539,7 +534,7 @@
       ],
       "files": [
         {
-          "path": "src/v0/minimal-layout.tsx",
+          "path": "src/layouts/minimal-layout.tsx",
           "type": "registry:file",
           "target": "app/layout.tsx"
         }
@@ -556,7 +551,7 @@
       ],
       "files": [
         {
-          "path": "src/v0/minimal-layout.tsx",
+          "path": "src/layouts/minimal-layout.tsx",
           "type": "registry:file",
           "target": "app/layout.tsx"
         }
@@ -573,7 +568,7 @@
       ],
       "files": [
         {
-          "path": "src/v0/minimal-layout.tsx",
+          "path": "src/layouts/minimal-layout.tsx",
           "type": "registry:file",
           "target": "app/layout.tsx"
         }
@@ -590,7 +585,7 @@
       ],
       "files": [
         {
-          "path": "src/v0/minimal-layout.tsx",
+          "path": "src/layouts/minimal-layout.tsx",
           "type": "registry:file",
           "target": "app/layout.tsx"
         }
@@ -607,7 +602,7 @@
       ],
       "files": [
         {
-          "path": "src/v0/minimal-layout.tsx",
+          "path": "src/layouts/minimal-layout.tsx",
           "type": "registry:file",
           "target": "app/layout.tsx"
         }
@@ -624,7 +619,7 @@
       ],
       "files": [
         {
-          "path": "src/v0/minimal-layout.tsx",
+          "path": "src/layouts/minimal-layout.tsx",
           "type": "registry:file",
           "target": "app/layout.tsx"
         }
@@ -641,7 +636,7 @@
       ],
       "files": [
         {
-          "path": "src/v0/minimal-layout.tsx",
+          "path": "src/layouts/minimal-layout.tsx",
           "type": "registry:file",
           "target": "app/layout.tsx"
         }
@@ -658,7 +653,7 @@
       ],
       "files": [
         {
-          "path": "src/v0/minimal-layout.tsx",
+          "path": "src/layouts/minimal-layout.tsx",
           "type": "registry:file",
           "target": "app/layout.tsx"
         }
@@ -675,7 +670,7 @@
       ],
       "files": [
         {
-          "path": "src/v0/minimal-layout.tsx",
+          "path": "src/layouts/minimal-layout.tsx",
           "type": "registry:file",
           "target": "app/layout.tsx"
         }
@@ -692,7 +687,7 @@
       ],
       "files": [
         {
-          "path": "src/v0/minimal-layout.tsx",
+          "path": "src/layouts/minimal-layout.tsx",
           "type": "registry:file",
           "target": "app/layout.tsx"
         }
@@ -709,7 +704,7 @@
       ],
       "files": [
         {
-          "path": "src/v0/minimal-layout.tsx",
+          "path": "src/layouts/minimal-layout.tsx",
           "type": "registry:file",
           "target": "app/layout.tsx"
         },
@@ -731,7 +726,7 @@
       ],
       "files": [
         {
-          "path": "src/v0/minimal-layout.tsx",
+          "path": "src/layouts/minimal-layout.tsx",
           "type": "registry:file",
           "target": "app/layout.tsx"
         }
@@ -748,7 +743,7 @@
       ],
       "files": [
         {
-          "path": "src/v0/minimal-layout.tsx",
+          "path": "src/layouts/minimal-layout.tsx",
           "type": "registry:file",
           "target": "app/layout.tsx"
         }
@@ -765,7 +760,7 @@
       ],
       "files": [
         {
-          "path": "src/v0/minimal-layout.tsx",
+          "path": "src/layouts/minimal-layout.tsx",
           "type": "registry:file",
           "target": "app/layout.tsx"
         }
@@ -782,7 +777,7 @@
       ],
       "files": [
         {
-          "path": "src/v0/minimal-layout.tsx",
+          "path": "src/layouts/minimal-layout.tsx",
           "type": "registry:file",
           "target": "app/layout.tsx"
         }
@@ -799,7 +794,7 @@
       ],
       "files": [
         {
-          "path": "src/v0/minimal-layout.tsx",
+          "path": "src/layouts/minimal-layout.tsx",
           "type": "registry:file",
           "target": "app/layout.tsx"
         }

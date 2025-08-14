@@ -38,7 +38,7 @@ repository's [`registry.json`](./registry.json). For more information, refer to 
 ## Theming
 
 To use a custom theme for all the components, all you need to do is modify the CSS tokens in
-[`tokens.css`](./src/app/tokens.css). More information on these practices can be found
+[`globals.css`](./src/app/globals.css). More information on these practices can be found
 on [ui.shadcn.com/docs](https://ui.shadcn.com/docs).
 
 #### MCP
@@ -47,15 +47,15 @@ To use this registry with MCP, you must also edit [`registry.json`](./registry.j
 `registry-item` named `theme`. This `registry:theme` item not only contains the tailwind configuration, but it also
 contains your design tokens / CSS variables.
 
-The `shadcn/ui` CLI's MCP command will use the entire `registy.json` file, so it must be put in the `/public` folder 
-with all of your `registry:item`s.  This will enable you to use your registry in tools like Cursor & Windsurf. 
+The `shadcn/ui` CLI's MCP command will use the entire `registy.json` file, so it must be put in the `/public` folder
+with all of your `registry:item`s. This will enable you to use your registry in tools like Cursor & Windsurf.
 
 #### Fonts
 
 To use custom fonts, you can either use [
-`next/font/google`](https://nextjs.org/docs/pages/getting-started/fonts#google-fonts) or the [
-`@font-face`](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face) CSS rule. For example, `fonts.css` might look
-like:
+`next/font/google`](https://nextjs.org/docs/pages/getting-started/fonts#google-fonts) or the
+[`@font-face`](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face) CSS rule in your
+[`globals.css`](./src/app/globals.css).
 
 ```css
 @font-face {
@@ -66,19 +66,10 @@ like:
       format("woff2"), url("https://fonts.gstatic.com/s/montserrat/v15/JTUSjIg1_i6t8kCHKm45xW5rygbj49c.woff")
       format("woff");
 }
-
-@font-face {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 700;
-  src: url("https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_dJE3gnD-w.woff2")
-      format("woff2"), url("https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_dJE3g3D_w.woff")
-      format("woff");
-}
 ```
 
-If you use `@font-face`, you will also need to modify [`tailwind.css`](src/app/tailwind.css) AND
-[`tailwind.config.ts`](src/v0/tailwind.config.ts) to map your custom fonts to Tailwind. Refer to this
+If you use `@font-face`, ensure you modify [`globals.css`](src/app/globals.css) tailwind configuration to map
+your custom font variables to Tailwind fonts. Refer to this
 [Tailwind documentation](https://tailwindcss.com/docs/font-family#customizing-your-theme)
 
 ## Running locally
@@ -106,4 +97,4 @@ Your app should now be running on [localhost:3000](http://localhost:3000).
 
 `@/lib` contains all business logic & utils
 
-`@/v0` contains all v0 collateral used in `registry.json`
+`@/layouts` contains all v0 layouts used in `registry.json`
