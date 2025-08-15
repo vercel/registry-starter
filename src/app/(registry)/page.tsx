@@ -16,9 +16,9 @@ const blockItems = getBlocks();
 
 export default function Home() {
   return (
-    <main className="container mt-8 p-10">
+    <main className="container p-10">
       <div className="mb-8">
-        <div className="space-y-2">
+        <div className="flex flex-col gap-2">
           <h1 className="font-semibold text-3xl">Registry</h1>
           <p className="text-muted-foreground">
             Distribute your design system tokens, custom components, hooks,

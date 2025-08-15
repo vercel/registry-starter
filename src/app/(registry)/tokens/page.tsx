@@ -1,32 +1,20 @@
 "use client";
 
-import { ArrowLeft } from "lucide-react";
-import Link from "next/link";
-import type React from "react";
-
 import { FontBlock } from "@/app/(registry)/tokens/font-block";
-import { Button } from "@/components/ui/button";
 import { ColorBlock } from "./color-block";
 
 export default function TokensPage() {
   return (
-    <div className="container p-5 md:p-10">
-      <div className="mb-8">
-        <Button variant="ghost" size="sm" asChild className="mb-4">
-          <Link href="/">
-            <ArrowLeft className="mr-2 size-4" />
-            Back to Home
-          </Link>
-        </Button>
-
-        <h1 className="font-bold text-3xl tracking-tight">Design Tokens</h1>
-        <p className="mt-1 text-muted-foreground">
+    <div className="container p-10">
+      <div className="mb-10 flex flex-col gap-2">
+        <h1 className="font-semibold text-3xl">Design Tokens</h1>
+        <p className="text-muted-foreground">
           A comprehensive overview of all color tokens used in the design system
         </p>
       </div>
 
       {/* Fonts */}
-      <section className="mb-12">
+      <section className="mb-10">
         <h2 className="mb-4 font-semibold text-xl">Fonts</h2>
         <p className="mb-6 text-muted-foreground">
           The core font families that define the primary typography.
@@ -39,7 +27,7 @@ export default function TokensPage() {
       </section>
 
       {/* Primary Theme */}
-      <section className="mb-12">
+      <section className="mb-10">
         <h2 className="mb-4 font-semibold text-xl">Primary Theme</h2>
         <p className="mb-6 text-muted-foreground">
           The core colors that define the primary theme and overall look of the
@@ -57,7 +45,7 @@ export default function TokensPage() {
       </section>
 
       {/* Secondary & Accent */}
-      <section className="mb-12">
+      <section className="mb-10">
         <h2 className="mb-4 font-semibold text-xl">Secondary & Accent</h2>
         <p className="mb-6 text-muted-foreground">
           Colors used for secondary elements and accents throughout the
@@ -78,7 +66,7 @@ export default function TokensPage() {
       </section>
 
       {/* UI Component */}
-      <section className="mb-12">
+      <section className="mb-10">
         <h2 className="mb-4 font-semibold text-xl">UI Component</h2>
         <p className="mb-6 text-muted-foreground">
           Colors used for specific UI components like cards, popovers, and muted
@@ -98,7 +86,7 @@ export default function TokensPage() {
       </section>
 
       {/* Utility & Form */}
-      <section className="mb-12">
+      <section className="mb-10">
         <h2 className="mb-4 font-semibold text-xl">Utility & Form</h2>
         <p className="mb-6 text-muted-foreground">
           Colors used for borders, inputs, and other utility elements.
@@ -111,7 +99,7 @@ export default function TokensPage() {
       </section>
 
       {/* Status & Feedback */}
-      <section className="mb-12">
+      <section className="mb-10">
         <h2 className="mb-4 font-semibold text-xl">Status & Feedback</h2>
         <p className="mb-6 text-muted-foreground">
           Colors used to indicate different states and provide feedback to
@@ -127,7 +115,7 @@ export default function TokensPage() {
       </section>
 
       {/* Chart & Visualization */}
-      <section className="mb-12">
+      <section className="mb-10">
         <h2 className="mb-4 font-semibold text-xl">Chart & Visualization</h2>
         <p className="mb-6 text-muted-foreground">
           Colors used for data visualization and charts.
@@ -142,7 +130,7 @@ export default function TokensPage() {
       </section>
 
       {/* Sidebar & Navigation */}
-      <section className="mb-12">
+      <section className="mb-10">
         <h2 className="mb-4 font-semibold text-xl">Sidebar & Navigation</h2>
         <p className="mb-6 text-muted-foreground">
           Colors specific to the sidebar and navigation components.
