@@ -1,5 +1,4 @@
 import { Analytics } from "@vercel/analytics/next";
-import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import type { ReactNode } from "react";
@@ -41,7 +40,7 @@ export default function RootLayout({
         InterSans.variable,
         InterMono.variable,
         InterSerif.variable,
-        "bg-background text-foreground",
+        "bg-background text-foreground"
       )}
     >
       <meta
@@ -51,7 +50,6 @@ export default function RootLayout({
       <body className="flex grow">
         {children}
         <Analytics />
-        <SpeedInsights />
       </body>
     </html>
   );
