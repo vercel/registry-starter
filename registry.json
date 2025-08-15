@@ -101,7 +101,6 @@
       "registryDependencies": [
         "https://domino-registry.vercel.app/r/brand-header.json",
         "https://domino-registry.vercel.app/r/brand-sidebar.json",
-        "https://domino-registry.vercel.app/r/product-grid.json",
         "https://domino-registry.vercel.app/r/theme.json"
       ],
       "files": [
@@ -136,28 +135,6 @@
         },
         {
           "path": "src/app/demo/[name]/blocks/dashboard-page.tsx",
-          "type": "registry:page",
-          "target": "app/page.tsx"
-        }
-      ]
-    },
-    {
-      "name": "store",
-      "type": "registry:block",
-      "title": "Store",
-      "description": "A store application with your brand themed components",
-      "registryDependencies": [
-        "https://domino-registry.vercel.app/r/product-grid.json",
-        "https://domino-registry.vercel.app/r/theme.json"
-      ],
-      "files": [
-        {
-          "path": "src/layouts/minimal-layout.tsx",
-          "type": "registry:file",
-          "target": "app/layout.tsx"
-        },
-        {
-          "path": "src/app/demo/[name]/blocks/store-page.tsx",
           "type": "registry:page",
           "target": "app/page.tsx"
         }
@@ -326,30 +303,6 @@
           "path": "src/app/demo/[name]/blocks/blank-page.tsx",
           "type": "registry:page",
           "target": "app/page.tsx"
-        }
-      ]
-    },
-    {
-      "name": "product-grid",
-      "type": "registry:component",
-      "title": "Product Grid",
-      "description": "Product grid displaying all products with API to fetch data",
-      "registryDependencies": [
-        "https://domino-registry.vercel.app/r/theme.json"
-      ],
-      "files": [
-        {
-          "path": "src/components/product-grid.tsx",
-          "type": "registry:component"
-        },
-        {
-          "path": "src/lib/products.ts",
-          "type": "registry:lib"
-        },
-        {
-          "path": "src/layouts/minimal-layout.tsx",
-          "type": "registry:file",
-          "target": "app/layout.tsx"
         }
       ]
     },
