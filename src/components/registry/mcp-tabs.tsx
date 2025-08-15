@@ -5,14 +5,12 @@ import { useEffect, useState } from "react";
 
 import { AddToCursor } from "@/components/registry/add-to-cursor";
 import { Button } from "@/components/ui/button";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 export async function copyToClipboard(value: string) {
   await navigator.clipboard.writeText(value);
 }
 
 export function MCPTabs({ rootUrl }: { rootUrl: string }) {
-  const [tab, setTab] = useState("cursor");
   const [hasCopied, setHasCopied] = useState(false);
 
   const mcp = {
@@ -29,7 +27,7 @@ export function MCPTabs({ rootUrl }: { rootUrl: string }) {
       },
     },
     null,
-    2,
+    2
   );
 
   useEffect(() => {
@@ -41,33 +39,10 @@ export function MCPTabs({ rootUrl }: { rootUrl: string }) {
   }, [hasCopied]);
 
   return (
-    <Tabs value={tab} onValueChange={setTab}>
-      <div className="flex items-center justify-between">
-        <TabsList>
-          <TabsTrigger value="cursor">Cursor</TabsTrigger>
-          <TabsTrigger value="windsurf">Windsurf</TabsTrigger>
-        </TabsList>
-      </div>
-
-      <TabsContent value="cursor">
-        <p className="text-muted-foreground text-sm">
-          Click Add to Cursor or copy and paste the code into{" "}
-          <code className="inline text-sm tabular-nums">.cursor/mcp.json</code>
-        </p>
-      </TabsContent>
-
-      <TabsContent value="windsurf">
-        <p className="text-muted-foreground text-sm">
-          Copy and paste the code into{" "}
-          <code className="inline text-sm tabular-nums">
-            .codeium/windsurf/mcp_config.json
-          </code>
-        </p>
-      </TabsContent>
-
+    <div>
       <div className="relative">
         <div className="absolute top-3 right-3 flex gap-2">
-          {tab === "cursor" && <AddToCursor mcp={mcp} />}
+          <AddToCursor mcp={mcp} />
 
           <Button
             size="sm"
@@ -76,7 +51,6 @@ export function MCPTabs({ rootUrl }: { rootUrl: string }) {
               copyToClipboard(mcpServer);
               setHasCopied(true);
             }}
-            className="shadow-none"
           >
             {hasCopied ? <Check /> : <ClipboardIcon />}
             Copy
@@ -89,6 +63,6 @@ export function MCPTabs({ rootUrl }: { rootUrl: string }) {
           </code>
         </pre>
       </div>
-    </Tabs>
+    </div>
   );
 }
