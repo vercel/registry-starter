@@ -1,4 +1,4 @@
-import { Skeleton } from "@/components/ui/skeleton";
+import { Skeleton } from "@/registry/new-york/ui/skeleton";
 
 export const skeleton = {
   name: "skeleton",

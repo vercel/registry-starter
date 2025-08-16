@@ -1,4 +1,4 @@
-import { Slider } from "@/components/ui/slider";
+import { Slider } from "@/registry/new-york/ui/slider";
 
 export const slider = {
   name: "slider",

@@ -1,4 +1,4 @@
-import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
+import { Alert, AlertDescription, AlertTitle } from "@/registry/new-york/ui/alert";
 import { AlertCircle, Terminal } from "lucide-react";
 
 export const alert = {

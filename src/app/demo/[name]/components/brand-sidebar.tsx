@@ -1,5 +1,5 @@
-import { BrandSidebar } from "@/components/brand-sidebar";
-import { SidebarProvider } from "@/components/ui/sidebar";
+import { BrandSidebar } from "@/registry/new-york/components/brand-sidebar";
+import { SidebarProvider } from "@/registry/new-york/ui/sidebar";
 
 export const brandSidebar = {
   name: "brand-sidebar",

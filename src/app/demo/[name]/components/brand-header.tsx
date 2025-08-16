@@ -1,5 +1,5 @@
-import { BrandHeader } from "@/components/brand-header";
-import { SidebarProvider } from "@/components/ui/sidebar";
+import { BrandHeader } from "@/registry/new-york/components/brand-header";
+import { SidebarProvider } from "@/registry/new-york/ui/sidebar";
 
 export const brandHeader = {
   name: "brand-header",

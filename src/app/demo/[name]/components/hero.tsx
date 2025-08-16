@@ -1,4 +1,4 @@
-import { Hero } from "@/components/hero";
+import { Hero } from "@/registry/new-york/components/hero";
 
 export const hero = {
   name: "hero",

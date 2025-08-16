@@ -8,7 +8,7 @@ import {
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card";
+} from "@/registry/new-york/ui/card";
 import {
   type ChartConfig,
   ChartContainer,
@@ -16,7 +16,7 @@ import {
   ChartLegendContent,
   ChartTooltip,
   ChartTooltipContent,
-} from "@/components/ui/chart";
+} from "@/registry/new-york/ui/chart";
 import * as React from "react";
 
 const chartData = [

@@ -2,7 +2,7 @@
 
 import { toast } from "sonner";
 
-import { Button } from "@/components/ui/button";
+import { Button } from "@/registry/new-york/ui/button";
 
 export function Sonner() {
   return <Button onClick={() => toast("Toast")}>Normal Toast</Button>;

@@ -1,4 +1,4 @@
-import { Promo } from "@/components/promo";
+import { Promo } from "@/registry/new-york/components/promo";
 
 export const promo = {
   name: "promo",

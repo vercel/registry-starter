@@ -1,6 +1,6 @@
 import { Bold, Italic, Underline } from "lucide-react";
 
-import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
+import { ToggleGroup, ToggleGroupItem } from "@/registry/new-york/ui/toggle-group";
 
 export const toggleGroup = {
   name: "toggle-group",

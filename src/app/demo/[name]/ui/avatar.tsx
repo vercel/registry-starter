@@ -1,4 +1,4 @@
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Avatar, AvatarFallback, AvatarImage } from "@/registry/new-york/ui/avatar";
 
 export const avatar = {
   name: "avatar",

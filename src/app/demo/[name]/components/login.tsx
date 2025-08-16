@@ -1,4 +1,4 @@
-import { Login } from "@/components/login";
+import { Login } from "@/registry/new-york/components/login";
 
 export const login = {
   name: "login",
