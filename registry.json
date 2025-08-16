@@ -1,83 +1,97 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry.json",
-  "name": "Registry Starter",
+  "name": "Domino Registry",
   "homepage": "https://domino-registry.vercel.app",
   "items": [
     {
       "name": "theme",
       "type": "registry:theme",
-      "title": "Nature Theme",
-      "description": "A nature theme and styles with greens and browns using Tailwind and shadcn/ui variable names",
+      "title": "Domino",
+      "description": "Domino theme",
       "cssVars": {
         "light": {
-          "background": "oklch(0.97 0.01 80.72)",
-          "foreground": "oklch(0.3 0.04 30.2)",
-          "card": "oklch(0.97 0.01 80.72)",
-          "card-foreground": "oklch(0.3 0.04 30.2)",
-          "popover": "oklch(0.97 0.01 80.72)",
-          "popover-foreground": "oklch(0.3 0.04 30.2)",
+          "radius": "0.625rem",
+          "card": "oklch(1 0 0)",
+          "card-foreground": "oklch(0.145 0 0)",
+          "popover": "oklch(1 0 0)",
+          "popover-foreground": "oklch(0.145 0 0)",
           "primary": "oklch(0.4744 0.256 297.4098)",
           "primary-foreground": "oklch(1 0 0)",
-          "secondary": "oklch(0.96 0.02 147.64)",
-          "secondary-foreground": "oklch(0.43 0.12 144.31)",
-          "muted": "oklch(0.94 0.01 74.42)",
-          "muted-foreground": "oklch(0.45 0.05 39.21)",
-          "accent": "oklch(0.9 0.05 146.04)",
-          "accent-foreground": "oklch(0.43 0.12 144.31)",
-          "destructive": "oklch(0.54 0.19 26.72)",
-          "destructive-foreground": "oklch(1.0 0 0)",
-          "border": "oklch(0.88 0.02 74.64)",
-          "input": "oklch(0.88 0.02 74.64)",
-          "ring": "oklch(0.52 0.13 144.17)",
-          "chart-1": "oklch(0.67 0.16 144.21)",
-          "chart-2": "oklch(0.58 0.14 144.18)",
-          "chart-3": "oklch(0.52 0.13 144.17)",
-          "chart-4": "oklch(0.43 0.12 144.31)",
-          "chart-5": "oklch(0.22 0.05 145.73)",
-          "sidebar": "oklch(0.94 0.01 74.42)",
-          "sidebar-foreground": "oklch(0.3 0.04 30.2)",
-          "sidebar-primary": "oklch(0.52 0.13 144.17)",
-          "sidebar-primary-foreground": "oklch(1.0 0 0)",
-          "sidebar-accent": "oklch(0.9 0.05 146.04)",
-          "sidebar-accent-foreground": "oklch(0.43 0.12 144.31)",
-          "sidebar-border": "oklch(0.88 0.02 74.64)",
-          "sidebar-ring": "oklch(0.52 0.13 144.17)",
-          "radius": "0.5rem"
+          "secondary": "oklch(0.97 0 0)",
+          "secondary-foreground": "oklch(0.205 0 0)",
+          "muted": "oklch(0.97 0 0)",
+          "muted-foreground": "oklch(0.556 0 0)",
+          "accent": "oklch(0.97 0 0)",
+          "accent-foreground": "oklch(0.205 0 0)",
+          "destructive": "oklch(0.577 0.245 27.325)",
+          "destructive-foreground": "oklch(1 0 0)",
+          "border": "oklch(0.922 0 0)",
+          "input": "oklch(0.922 0 0)",
+          "ring": "oklch(0.708 0 0)",
+          "chart-1": "oklch(0.646 0.222 41.116)",
+          "chart-2": "oklch(0.6 0.118 184.704)",
+          "chart-3": "oklch(0.398 0.07 227.392)",
+          "chart-4": "oklch(0.828 0.189 84.429)",
+          "chart-5": "oklch(0.769 0.188 70.08)",
+          "sidebar": "oklch(0.985 0 0)",
+          "sidebar-foreground": "oklch(0.145 0 0)",
+          "sidebar-primary": "oklch(0.205 0 0)",
+          "sidebar-primary-foreground": "oklch(0.985 0 0)",
+          "sidebar-accent": "oklch(0.97 0 0)",
+          "sidebar-accent-foreground": "oklch(0.205 0 0)",
+          "sidebar-border": "oklch(0.922 0 0)",
+          "sidebar-ring": "oklch(0.708 0 0)",
+          "surface": "var(--background)",
+          "surface-foreground": "var(--foreground)",
+          "code": "var(--surface)",
+          "code-foreground": "var(--surface-foreground)",
+          "code-highlight": "oklch(0.96 0 0)",
+          "code-number": "oklch(0.56 0 0)",
+          "selection": "oklch(0.145 0 0)",
+          "selection-foreground": "oklch(1 0 0)",
+          "background": "oklch(1 0 0)",
+          "foreground": "oklch(0.145 0 0)"
         },
         "dark": {
-          "background": "oklch(0.15 0.01 74.42)",
-          "foreground": "oklch(0.95 0.02 80.72)",
-          "card": "oklch(0.12 0.01 80.72)",
-          "card-foreground": "oklch(0.95 0.02 80.72)",
-          "popover": "oklch(0.12 0.01 80.72)",
-          "popover-foreground": "oklch(0.95 0.02 80.72)",
+          "background": "oklch(0.145 0 0)",
+          "foreground": "oklch(0.985 0 0)",
+          "card": "oklch(0.205 0 0)",
+          "card-foreground": "oklch(0.985 0 0)",
+          "popover": "oklch(0.205 0 0)",
+          "popover-foreground": "oklch(0.985 0 0)",
           "primary": "oklch(0.922 0 0)",
           "primary-foreground": "oklch(0.205 0 0)",
-          "secondary": "oklch(0.15 0.02 147.64)",
-          "secondary-foreground": "oklch(0.65 0.12 144.31)",
-          "muted": "oklch(0.18 0.01 74.42)",
-          "muted-foreground": "oklch(0.65 0.03 74.42)",
-          "accent": "oklch(0.22 0.04 146.04)",
-          "accent-foreground": "oklch(0.65 0.12 144.31)",
-          "destructive": "oklch(0.62 0.22 26.72)",
-          "destructive-foreground": "oklch(0.95 0.02 80.72)",
-          "border": "oklch(0.22 0.02 74.64)",
-          "input": "oklch(0.22 0.02 74.64)",
-          "ring": "oklch(0.58 0.15 144.17)",
-          "chart-1": "oklch(0.72 0.16 144.21)",
-          "chart-2": "oklch(0.63 0.14 144.18)",
-          "chart-3": "oklch(0.58 0.15 144.17)",
-          "chart-4": "oklch(0.48 0.12 144.31)",
-          "chart-5": "oklch(0.35 0.08 145.73)",
-          "sidebar": "oklch(0.15 0.01 74.42)",
-          "sidebar-foreground": "oklch(0.95 0.02 80.72)",
-          "sidebar-primary": "oklch(0.58 0.15 144.17)",
-          "sidebar-primary-foreground": "oklch(0.09 0.01 80.72)",
-          "sidebar-accent": "oklch(0.22 0.04 146.04)",
-          "sidebar-accent-foreground": "oklch(0.65 0.12 144.31)",
-          "sidebar-border": "oklch(0.22 0.02 74.64)",
-          "sidebar-ring": "oklch(0.58 0.15 144.17)",
-          "radius": "0.5rem"
+          "secondary": "oklch(0.269 0 0)",
+          "secondary-foreground": "oklch(0.985 0 0)",
+          "muted": "oklch(0.269 0 0)",
+          "muted-foreground": "oklch(0.708 0 0)",
+          "accent": "oklch(0.269 0 0)",
+          "accent-foreground": "oklch(0.985 0 0)",
+          "destructive": "oklch(0.704 0.191 22.216)",
+          "border": "oklch(1 0 0 / 10%)",
+          "input": "oklch(1 0 0 / 15%)",
+          "ring": "oklch(0.556 0 0)",
+          "chart-1": "oklch(0.488 0.243 264.376)",
+          "chart-2": "oklch(0.696 0.17 162.48)",
+          "chart-3": "oklch(0.769 0.188 70.08)",
+          "chart-4": "oklch(0.627 0.265 303.9)",
+          "chart-5": "oklch(0.645 0.246 16.439)",
+          "sidebar": "oklch(0.205 0 0)",
+          "sidebar-foreground": "oklch(0.985 0 0)",
+          "sidebar-primary": "oklch(0.488 0.243 264.376)",
+          "sidebar-primary-foreground": "oklch(0.985 0 0)",
+          "sidebar-accent": "oklch(0.269 0 0)",
+          "sidebar-accent-foreground": "oklch(0.985 0 0)",
+          "sidebar-border": "oklch(1 0 0 / 10%)",
+          "sidebar-ring": "oklch(0.556 0 0)",
+          "surface": "var(--background)",
+          "surface-foreground": "var(--foreground)",
+          "code": "var(--surface)",
+          "code-foreground": "var(--surface-foreground)",
+          "code-highlight": "oklch(0.27 0 0)",
+          "code-number": "oklch(0.72 0 0)",
+          "selection": "oklch(0.922 0 0)",
+          "selection-foreground": "oklch(0.205 0 0)"
         }
       },
       "files": [
@@ -98,19 +112,15 @@
       "type": "registry:block",
       "title": "Blank",
       "description": "A blank application with all brand components and code",
-      "registryDependencies": [
-        "https://domino-registry.vercel.app/r/brand-header.json",
-        "https://domino-registry.vercel.app/r/brand-sidebar.json",
-        "https://domino-registry.vercel.app/r/theme.json"
-      ],
+      "registryDependencies": ["brand-header", "brand-sidebar", "theme"],
       "files": [
         {
-          "path": "src/layouts/minimal-layout.tsx",
+          "path": "src/registry/new-york/blocks/minimal-layout.tsx",
           "type": "registry:file",
           "target": "app/layout.tsx"
         },
         {
-          "path": "src/app/demo/[name]/blocks/blank-page.tsx",
+          "path": "src/registry/new-york/blocks/blank-page.tsx",
           "type": "registry:page",
           "target": "app/page.tsx"
         }
@@ -122,19 +132,19 @@
       "title": "Dashboard",
       "description": "A dashboard application with your brand themed components",
       "registryDependencies": [
-        "https://domino-registry.vercel.app/r/sonner.json",
-        "https://domino-registry.vercel.app/r/brand-header.json",
-        "https://domino-registry.vercel.app/r/brand-sidebar.json",
-        "https://domino-registry.vercel.app/r/theme.json"
+        "sonner",
+        "brand-header",
+        "brand-sidebar",
+        "theme"
       ],
       "files": [
         {
-          "path": "src/layouts/shell-layout.tsx",
+          "path": "src/registry/new-york/blocks/shell-layout.tsx",
           "type": "registry:file",
           "target": "app/layout.tsx"
         },
         {
-          "path": "src/app/demo/[name]/blocks/dashboard-page.tsx",
+          "path": "src/registry/new-york/blocks/dashboard-page.tsx",
           "type": "registry:page",
           "target": "app/page.tsx"
         }
@@ -145,29 +155,12 @@
       "type": "registry:component",
       "title": "Brand Header",
       "description": "A styled, simple, reusable header",
-      "registryDependencies": [
-        "button",
-        "input",
-        "avatar",
-        "sidebar",
-        "https://domino-registry.vercel.app/r/sonner.json",
-        "https://domino-registry.vercel.app/r/logo.json",
-        "https://domino-registry.vercel.app/r/theme.json"
-      ],
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["button", "input", "avatar", "sidebar", "logo"],
       "files": [
         {
-          "path": "src/components/brand-header.tsx",
+          "path": "src/registry/new-york/components/brand-header.tsx",
           "type": "registry:component"
-        },
-        {
-          "path": "src/layouts/shell-layout.tsx",
-          "type": "registry:file",
-          "target": "app/layout.tsx"
-        },
-        {
-          "path": "src/app/demo/[name]/blocks/blank-page.tsx",
-          "type": "registry:page",
-          "target": "app/page.tsx"
         }
       ]
     },
@@ -176,27 +169,12 @@
       "type": "registry:component",
       "title": "Brand Sidebar",
       "description": "A styled, simple, reusable sidebar",
-      "registryDependencies": [
-        "badge",
-        "button",
-        "sidebar",
-        "https://domino-registry.vercel.app/r/sonner.json",
-        "https://domino-registry.vercel.app/r/theme.json"
-      ],
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["badge", "button", "sidebar"],
       "files": [
         {
-          "path": "src/components/brand-sidebar.tsx",
+          "path": "src/registry/new-york/components/brand-sidebar.tsx",
           "type": "registry:component"
-        },
-        {
-          "path": "src/layouts/shell-layout.tsx",
-          "type": "registry:file",
-          "target": "app/layout.tsx"
-        },
-        {
-          "path": "src/app/demo/[name]/blocks/blank-page.tsx",
-          "type": "registry:page",
-          "target": "app/page.tsx"
         }
       ]
     },
@@ -205,26 +183,12 @@
       "type": "registry:component",
       "title": "Login",
       "description": "Username & password login section with customer quote.",
-      "registryDependencies": [
-        "badge",
-        "button",
-        "https://domino-registry.vercel.app/r/theme.json",
-        "https://domino-registry.vercel.app/r/logo.json"
-      ],
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["badge", "button", "logo"],
       "files": [
         {
-          "path": "src/components/login.tsx",
+          "path": "src/registry/new-york/components/login.tsx",
           "type": "registry:component"
-        },
-        {
-          "path": "src/layouts/minimal-layout.tsx",
-          "type": "registry:file",
-          "target": "app/layout.tsx"
-        },
-        {
-          "path": "src/app/demo/[name]/blocks/blank-page.tsx",
-          "type": "registry:page",
-          "target": "app/page.tsx"
         }
       ]
     },
@@ -233,23 +197,10 @@
       "type": "registry:component",
       "title": "Brand Logo",
       "description": "A styled, simple, reusable logo",
-      "registryDependencies": [
-        "https://domino-registry.vercel.app/r/theme.json"
-      ],
       "files": [
         {
-          "path": "src/components/logo.tsx",
+          "path": "src/registry/new-york/components/logo.tsx",
           "type": "registry:component"
-        },
-        {
-          "path": "src/layouts/minimal-layout.tsx",
-          "type": "registry:file",
-          "target": "app/layout.tsx"
-        },
-        {
-          "path": "src/app/demo/[name]/blocks/blank-page.tsx",
-          "type": "registry:page",
-          "target": "app/page.tsx"
         }
       ]
     },
@@ -258,25 +209,12 @@
       "type": "registry:component",
       "title": "Hero",
       "description": "Attention-grabbing section for the top of your landing pages.",
-      "registryDependencies": [
-        "badge",
-        "button",
-        "https://domino-registry.vercel.app/r/theme.json"
-      ],
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["badge", "button"],
       "files": [
         {
-          "path": "src/components/hero.tsx",
+          "path": "src/registry/new-york/components/hero.tsx",
           "type": "registry:component"
-        },
-        {
-          "path": "src/layouts/minimal-layout.tsx",
-          "type": "registry:file",
-          "target": "app/layout.tsx"
-        },
-        {
-          "path": "src/app/demo/[name]/blocks/blank-page.tsx",
-          "type": "registry:page",
-          "target": "app/page.tsx"
         }
       ]
     },
@@ -285,24 +223,12 @@
       "type": "registry:component",
       "title": "Promo",
       "description": "Attention-grabbing section to display the current promotional deal.",
-      "registryDependencies": [
-        "button",
-        "https://domino-registry.vercel.app/r/theme.json"
-      ],
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["button"],
       "files": [
         {
-          "path": "src/components/promo.tsx",
+          "path": "src/registry/new-york/components/promo.tsx",
           "type": "registry:component"
-        },
-        {
-          "path": "src/layouts/minimal-layout.tsx",
-          "type": "registry:file",
-          "target": "app/layout.tsx"
-        },
-        {
-          "path": "src/app/demo/[name]/blocks/blank-page.tsx",
-          "type": "registry:page",
-          "target": "app/page.tsx"
         }
       ]
     },
@@ -311,15 +237,11 @@
       "type": "registry:ui",
       "title": "Accordion",
       "description": "A vertically stacked set of interactive headings that each reveal a section of content.",
-      "registryDependencies": [
-        "accordion",
-        "https://domino-registry.vercel.app/r/theme.json"
-      ],
+      "dependencies": ["@radix-ui/react-accordion"],
       "files": [
         {
-          "path": "src/layouts/minimal-layout.tsx",
-          "type": "registry:file",
-          "target": "app/layout.tsx"
+          "path": "src/registry/new-york/ui/accordion.tsx",
+          "type": "registry:ui"
         }
       ]
     },
@@ -328,15 +250,11 @@
       "type": "registry:ui",
       "title": "Alert",
       "description": "Displays a callout for user attention.",
-      "registryDependencies": [
-        "alert",
-        "https://domino-registry.vercel.app/r/theme.json"
-      ],
+      "dependencies": ["class-variance-authority", "lucide-react"],
       "files": [
         {
-          "path": "src/layouts/minimal-layout.tsx",
-          "type": "registry:file",
-          "target": "app/layout.tsx"
+          "path": "src/registry/new-york/ui/alert.tsx",
+          "type": "registry:ui"
         }
       ]
     },
@@ -345,15 +263,11 @@
       "type": "registry:ui",
       "title": "Avatar",
       "description": "An image element with a fallback for representing the user.",
-      "registryDependencies": [
-        "avatar",
-        "https://domino-registry.vercel.app/r/theme.json"
-      ],
+      "dependencies": ["@radix-ui/react-avatar"],
       "files": [
         {
-          "path": "src/layouts/minimal-layout.tsx",
-          "type": "registry:file",
-          "target": "app/layout.tsx"
+          "path": "src/registry/new-york/ui/avatar.tsx",
+          "type": "registry:ui"
         }
       ]
     },
@@ -362,15 +276,11 @@
       "type": "registry:ui",
       "title": "Badge",
       "description": "Displays a small count or status indicator.",
-      "registryDependencies": [
-        "badge",
-        "https://domino-registry.vercel.app/r/theme.json"
-      ],
+      "dependencies": ["class-variance-authority"],
       "files": [
         {
-          "path": "src/layouts/minimal-layout.tsx",
-          "type": "registry:file",
-          "target": "app/layout.tsx"
+          "path": "src/registry/new-york/ui/badge.tsx",
+          "type": "registry:ui"
         }
       ]
     },
@@ -379,15 +289,11 @@
       "type": "registry:ui",
       "title": "Breadcrumb",
       "description": "Displays the path to the current resource using a hierarchy of links.",
-      "registryDependencies": [
-        "breadcrumb",
-        "https://domino-registry.vercel.app/r/theme.json"
-      ],
+      "dependencies": ["@radix-ui/react-slot", "lucide-react"],
       "files": [
         {
-          "path": "src/layouts/minimal-layout.tsx",
-          "type": "registry:file",
-          "target": "app/layout.tsx"
+          "path": "src/registry/new-york/ui/breadcrumb.tsx",
+          "type": "registry:ui"
         }
       ]
     },
@@ -396,15 +302,11 @@
       "type": "registry:ui",
       "title": "Button",
       "description": "Allows users to take actions with a single click or tap.",
-      "registryDependencies": [
-        "button",
-        "https://domino-registry.vercel.app/r/theme.json"
-      ],
+      "dependencies": ["@radix-ui/react-slot", "class-variance-authority"],
       "files": [
         {
-          "path": "src/layouts/minimal-layout.tsx",
-          "type": "registry:file",
-          "target": "app/layout.tsx"
+          "path": "src/registry/new-york/ui/button.tsx",
+          "type": "registry:ui"
         }
       ]
     },
@@ -413,15 +315,12 @@
       "type": "registry:ui",
       "title": "Calendar",
       "description": "A date field component that allows users to enter and edit date.",
-      "registryDependencies": [
-        "calendar",
-        "https://domino-registry.vercel.app/r/theme.json"
-      ],
+      "dependencies": ["react-day-picker"],
+      "registryDependencies": ["button"],
       "files": [
         {
-          "path": "src/layouts/minimal-layout.tsx",
-          "type": "registry:file",
-          "target": "app/layout.tsx"
+          "path": "src/registry/new-york/ui/calendar.tsx",
+          "type": "registry:ui"
         }
       ]
     },
@@ -430,15 +329,10 @@
       "type": "registry:ui",
       "title": "Card",
       "description": "Containers for displaying content and actions about a single subject.",
-      "registryDependencies": [
-        "card",
-        "https://domino-registry.vercel.app/r/theme.json"
-      ],
       "files": [
         {
-          "path": "src/layouts/minimal-layout.tsx",
-          "type": "registry:file",
-          "target": "app/layout.tsx"
+          "path": "src/registry/new-york/ui/card.tsx",
+          "type": "registry:ui"
         }
       ]
     },
@@ -447,15 +341,11 @@
       "type": "registry:ui",
       "title": "Chart",
       "description": "Beautiful charts. Built using Recharts. Copy and paste into your apps.",
-      "registryDependencies": [
-        "chart",
-        "https://domino-registry.vercel.app/r/theme.json"
-      ],
+      "dependencies": ["recharts", "lucide-react"],
       "files": [
         {
-          "path": "src/layouts/minimal-layout.tsx",
-          "type": "registry:file",
-          "target": "app/layout.tsx"
+          "path": "src/registry/new-york/ui/chart.tsx",
+          "type": "registry:ui"
         }
       ]
     },
@@ -464,32 +354,11 @@
       "type": "registry:ui",
       "title": "Checkbox",
       "description": "Allows users to select multiple items from a list of options.",
-      "registryDependencies": [
-        "checkbox",
-        "https://domino-registry.vercel.app/r/theme.json"
-      ],
+      "dependencies": ["@radix-ui/react-checkbox", "lucide-react"],
       "files": [
         {
-          "path": "src/layouts/minimal-layout.tsx",
-          "type": "registry:file",
-          "target": "app/layout.tsx"
-        }
-      ]
-    },
-    {
-      "name": "data-table",
-      "type": "registry:ui",
-      "title": "Data Table",
-      "description": "Powerful table and datagrids built using TanStack Table.",
-      "registryDependencies": [
-        "data-table",
-        "https://domino-registry.vercel.app/r/theme.json"
-      ],
-      "files": [
-        {
-          "path": "src/layouts/minimal-layout.tsx",
-          "type": "registry:file",
-          "target": "app/layout.tsx"
+          "path": "src/registry/new-york/ui/checkbox.tsx",
+          "type": "registry:ui"
         }
       ]
     },
@@ -498,15 +367,32 @@
       "type": "registry:ui",
       "title": "Date Picker",
       "description": "Displays the path to the current resource using a hierarchy of links.",
+      "dependencies": ["date-fns", "lucide-react"],
+      "registryDependencies": ["button", "calendar", "popover"],
+      "files": [
+        {
+          "path": "src/registry/new-york/ui/date-picker.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "data-table",
+      "type": "registry:ui",
+      "title": "Data Table",
+      "description": "Powerful table and datagrids built using TanStack Table.",
+      "dependencies": ["@tanstack/react-table", "lucide-react"],
       "registryDependencies": [
-        "date-picker",
-        "https://domino-registry.vercel.app/r/theme.json"
+        "button",
+        "checkbox",
+        "dropdown-menu",
+        "input",
+        "table"
       ],
       "files": [
         {
-          "path": "src/layouts/minimal-layout.tsx",
-          "type": "registry:file",
-          "target": "app/layout.tsx"
+          "path": "src/registry/new-york/ui/data-table.tsx",
+          "type": "registry:ui"
         }
       ]
     },
@@ -515,15 +401,11 @@
       "type": "registry:ui",
       "title": "Dialog",
       "description": "A modal dialog that interrupts the user with important content.",
-      "registryDependencies": [
-        "dialog",
-        "https://domino-registry.vercel.app/r/theme.json"
-      ],
+      "dependencies": ["@radix-ui/react-dialog", "lucide-react"],
       "files": [
         {
-          "path": "src/layouts/minimal-layout.tsx",
-          "type": "registry:file",
-          "target": "app/layout.tsx"
+          "path": "src/registry/new-york/ui/dialog.tsx",
+          "type": "registry:ui"
         }
       ]
     },
@@ -532,15 +414,11 @@
       "type": "registry:ui",
       "title": "Dropdown",
       "description": "Displays a menu to the user triggered by a button.",
-      "registryDependencies": [
-        "dropdown-menu",
-        "https://domino-registry.vercel.app/r/theme.json"
-      ],
+      "dependencies": ["@radix-ui/react-dropdown-menu", "lucide-react"],
       "files": [
         {
-          "path": "src/layouts/minimal-layout.tsx",
-          "type": "registry:file",
-          "target": "app/layout.tsx"
+          "path": "src/registry/new-york/ui/dropdown-menu.tsx",
+          "type": "registry:ui"
         }
       ]
     },
@@ -549,15 +427,10 @@
       "type": "registry:ui",
       "title": "Input",
       "description": "Displays a form input field or a component that looks like an input field.",
-      "registryDependencies": [
-        "input",
-        "https://domino-registry.vercel.app/r/theme.json"
-      ],
       "files": [
         {
-          "path": "src/layouts/minimal-layout.tsx",
-          "type": "registry:file",
-          "target": "app/layout.tsx"
+          "path": "src/registry/new-york/ui/input.tsx",
+          "type": "registry:ui"
         }
       ]
     },
@@ -566,15 +439,24 @@
       "type": "registry:ui",
       "title": "Menu Bar",
       "description": "A visually persistent menu common in desktop applications that provides quick access to a consistent set of commands.",
-      "registryDependencies": [
-        "menu-bar",
-        "https://domino-registry.vercel.app/r/theme.json"
-      ],
+      "dependencies": ["@radix-ui/react-menubar", "lucide-react"],
       "files": [
         {
-          "path": "src/layouts/minimal-layout.tsx",
-          "type": "registry:file",
-          "target": "app/layout.tsx"
+          "path": "src/registry/new-york/ui/menubar.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "popover",
+      "type": "registry:ui",
+      "title": "Popover",
+      "description": "Displays rich content in a portal, triggered by a button.",
+      "dependencies": ["@radix-ui/react-popover"],
+      "files": [
+        {
+          "path": "src/registry/new-york/ui/popover.tsx",
+          "type": "registry:ui"
         }
       ]
     },
@@ -583,15 +465,11 @@
       "type": "registry:ui",
       "title": "Select",
       "description": "Displays a list of options for the user to pick from—triggered by a button.",
-      "registryDependencies": [
-        "select",
-        "https://domino-registry.vercel.app/r/theme.json"
-      ],
+      "dependencies": ["@radix-ui/react-select", "lucide-react"],
       "files": [
         {
-          "path": "src/layouts/minimal-layout.tsx",
-          "type": "registry:file",
-          "target": "app/layout.tsx"
+          "path": "src/registry/new-york/ui/select.tsx",
+          "type": "registry:ui"
         }
       ]
     },
@@ -600,15 +478,11 @@
       "type": "registry:ui",
       "title": "Separator",
       "description": "Visually or semantically separates content.",
-      "registryDependencies": [
-        "separator",
-        "https://domino-registry.vercel.app/r/theme.json"
-      ],
+      "dependencies": ["@radix-ui/react-separator"],
       "files": [
         {
-          "path": "src/layouts/minimal-layout.tsx",
-          "type": "registry:file",
-          "target": "app/layout.tsx"
+          "path": "src/registry/new-york/ui/separator.tsx",
+          "type": "registry:ui"
         }
       ]
     },
@@ -617,15 +491,10 @@
       "type": "registry:ui",
       "title": "Skeleton",
       "description": "Use to show a placeholder while content is loading.",
-      "registryDependencies": [
-        "skeleton",
-        "https://domino-registry.vercel.app/r/theme.json"
-      ],
       "files": [
         {
-          "path": "src/layouts/minimal-layout.tsx",
-          "type": "registry:file",
-          "target": "app/layout.tsx"
+          "path": "src/registry/new-york/ui/skeleton.tsx",
+          "type": "registry:ui"
         }
       ]
     },
@@ -634,15 +503,11 @@
       "type": "registry:ui",
       "title": "Slider",
       "description": "An input where the user selects a value from within a given range.",
-      "registryDependencies": [
-        "slider",
-        "https://domino-registry.vercel.app/r/theme.json"
-      ],
+      "dependencies": ["@radix-ui/react-slider"],
       "files": [
         {
-          "path": "src/layouts/minimal-layout.tsx",
-          "type": "registry:file",
-          "target": "app/layout.tsx"
+          "path": "src/registry/new-york/ui/slider.tsx",
+          "type": "registry:ui"
         }
       ]
     },
@@ -651,20 +516,11 @@
       "type": "registry:ui",
       "title": "Sonner",
       "description": "An opinionated toast component for React.",
-      "registryDependencies": [
-        "sonner",
-        "https://domino-registry.vercel.app/r/theme.json"
-      ],
+      "dependencies": ["sonner", "next-themes"],
       "files": [
         {
-          "path": "src/layouts/minimal-layout.tsx",
-          "type": "registry:file",
-          "target": "app/layout.tsx"
-        },
-        {
-          "path": "src/components/ui/sonner.tsx",
-          "type": "registry:file",
-          "target": "components/ui/sonner.tsx"
+          "path": "src/registry/new-york/ui/sonner.tsx",
+          "type": "registry:ui"
         }
       ]
     },
@@ -673,15 +529,11 @@
       "type": "registry:ui",
       "title": "Switch",
       "description": "A control that allows the user to toggle between checked and not checked.",
-      "registryDependencies": [
-        "switch",
-        "https://domino-registry.vercel.app/r/theme.json"
-      ],
+      "dependencies": ["@radix-ui/react-switch"],
       "files": [
         {
-          "path": "src/layouts/minimal-layout.tsx",
-          "type": "registry:file",
-          "target": "app/layout.tsx"
+          "path": "src/registry/new-york/ui/switch.tsx",
+          "type": "registry:ui"
         }
       ]
     },
@@ -690,15 +542,10 @@
       "type": "registry:ui",
       "title": "Table",
       "description": "A responsive table component.",
-      "registryDependencies": [
-        "table",
-        "https://domino-registry.vercel.app/r/theme.json"
-      ],
       "files": [
         {
-          "path": "src/layouts/minimal-layout.tsx",
-          "type": "registry:file",
-          "target": "app/layout.tsx"
+          "path": "src/registry/new-york/ui/table.tsx",
+          "type": "registry:ui"
         }
       ]
     },
@@ -707,15 +554,11 @@
       "type": "registry:ui",
       "title": "Tabs",
       "description": "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
-      "registryDependencies": [
-        "tabs",
-        "https://domino-registry.vercel.app/r/theme.json"
-      ],
+      "dependencies": ["@radix-ui/react-tabs"],
       "files": [
         {
-          "path": "src/layouts/minimal-layout.tsx",
-          "type": "registry:file",
-          "target": "app/layout.tsx"
+          "path": "src/registry/new-york/ui/tabs.tsx",
+          "type": "registry:ui"
         }
       ]
     },
@@ -724,15 +567,11 @@
       "type": "registry:ui",
       "title": "Toggle Group",
       "description": "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
-      "registryDependencies": [
-        "toggle-group",
-        "https://domino-registry.vercel.app/r/theme.json"
-      ],
+      "dependencies": ["@radix-ui/react-toggle-group"],
       "files": [
         {
-          "path": "src/layouts/minimal-layout.tsx",
-          "type": "registry:file",
-          "target": "app/layout.tsx"
+          "path": "src/registry/new-york/ui/toggle-group.tsx",
+          "type": "registry:ui"
         }
       ]
     },
@@ -741,15 +580,11 @@
       "type": "registry:ui",
       "title": "Tooltip",
       "description": "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
-      "registryDependencies": [
-        "tooltip",
-        "https://domino-registry.vercel.app/r/theme.json"
-      ],
+      "dependencies": ["@radix-ui/react-tooltip"],
       "files": [
         {
-          "path": "src/layouts/minimal-layout.tsx",
-          "type": "registry:file",
-          "target": "app/layout.tsx"
+          "path": "src/registry/new-york/ui/tooltip.tsx",
+          "type": "registry:ui"
         }
       ]
     }
