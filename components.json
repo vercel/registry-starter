@@ -17,8 +17,5 @@
     "lib": "@/lib",
     "hooks": "@/hooks"
   },
-  "iconLibrary": "lucide",
-  "registries": {
-    "@registry-starter": "https://registry-starter.vercel.app/r/{name}.json"
-  }
+  "iconLibrary": "lucide"
 }
