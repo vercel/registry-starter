@@ -39,7 +39,7 @@ export default function Home() {
             </div>
           </div>
           <CardDescription>
-            Pre-built starter kits for consistent, repeatable generations
+            Pre-built blocks kits for consistent, repeatable generations
           </CardDescription>
         </CardHeader>
 
@@ -165,13 +165,17 @@ export default function Home() {
             contexts.
           </p>
           <p className="mt-2 text-muted-foreground">
-            To get begin, select a{" "}
-            <a href="/starters" className="underline">
-              starter
-            </a>{" "}
+            To get begin, start with a block{" "}
+            <span className="italic">
+              (like the{" "}
+              <a href="/registry/blank" className="underline">
+                blank block
+              </a>
+              )
+            </span>{" "}
             and click the <span className="font-bold">Open in v0</span> button.
-            You can also open individual components or blocks in v0 if you want
-            a smaller or more specific starting point.
+            You can also open individual UI primitives or components in v0 if
+            you want a smaller or more specific starting point.
           </p>
 
           <p className="mt-4 text-[#1B1F23] dark:text-white">
