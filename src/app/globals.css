@@ -40,6 +40,12 @@
   /* Glow strength (global dial) */
   --glow: 1;
 
+  /* Glass tokens (light: very subtle, mostly just premium panel feel) */
+  --glass-bg: oklch(1 0 0 / 0.72);
+  --glass-border: oklch(0.90 0.01 260 / 0.65);
+  --glass-highlight: oklch(1 0 0 / 0.75);
+  --glass-blur: 12px;
+
   /* Charts */
   --chart-1: oklch(0.7044 0.122 230.28);
   --chart-2: oklch(0.88 0.1507 109.04); /* softened yellow */
@@ -72,39 +78,47 @@
 
 .dark {
   /* ===================== */
-  /* Dark theme */
+  /* Dark theme (glass-first, like pages 2–6) */
   /* ===================== */
 
   --background: oklch(0.1405 0.0236 263.45); /* ~ #050913 */
   --foreground: oklch(0.9357 0.0092 258.34);
 
-  --card: oklch(0.1831 0.0309 263.38);
+  /* Make core surfaces slightly translucent to enable glass panels */
+  --card: oklch(0.1831 0.0309 263.38 / 0.76); /* glassy surface */
   --card-foreground: oklch(0.9357 0.0092 258.34);
 
-  --popover: oklch(0.1831 0.0309 263.38);
+  --popover: oklch(0.1831 0.0309 263.38 / 0.82); /* menus feel denser */
   --popover-foreground: oklch(0.9357 0.0092 258.34);
 
   --primary: oklch(0.7044 0.122 230.28);
   --primary-foreground: oklch(1 0 0);
 
-  --secondary: oklch(0.2101 0.0318 264.66);
+  --secondary: oklch(0.2101 0.0318 264.66 / 0.72);
   --secondary-foreground: oklch(0.9357 0.0092 258.34);
 
-  --muted: oklch(0.2781 0.0296 256.85);
+  --muted: oklch(0.2781 0.0296 256.85 / 0.80);
   --muted-foreground: oklch(0.7137 0.0192 261.32);
 
-  --accent: oklch(0.2101 0.0318 264.66);
+  --accent: oklch(0.2101 0.0318 264.66 / 0.72);
   --accent-foreground: oklch(0.9357 0.0092 258.34);
 
   --destructive: oklch(0.62 0.22 26.72);
   --destructive-foreground: oklch(1 0 0);
 
-  --border: oklch(0.2781 0.0296 256.85);
-  --input: oklch(0.2781 0.0296 256.85);
+  /* Borders: slightly brighter so glass panels read like layers */
+  --border: oklch(0.36 0.02 260 / 0.55);
+  --input: oklch(0.2781 0.0296 256.85 / 0.85);
   --ring: oklch(0.7044 0.122 230.28);
 
   /* Glow slightly stronger in dark */
   --glow: 1.25;
+
+  /* Glass tokens (dark: key to the look on pages 2–6) */
+  --glass-bg: oklch(0.1831 0.0309 263.38 / 0.62);
+  --glass-border: oklch(0.74 0.02 260 / 0.20);
+  --glass-highlight: oklch(1 0 0 / 0.06);
+  --glass-blur: 18px;
 
   /* Charts */
   --chart-1: oklch(0.7044 0.122 230.28);
@@ -118,9 +132,9 @@
   --sidebar-foreground: oklch(0.9357 0.0092 258.34);
   --sidebar-primary: oklch(0.7044 0.122 230.28);
   --sidebar-primary-foreground: oklch(1 0 0);
-  --sidebar-accent: oklch(0.2101 0.0318 264.66);
+  --sidebar-accent: oklch(0.2101 0.0318 264.66 / 0.72);
   --sidebar-accent-foreground: oklch(0.9357 0.0092 258.34);
-  --sidebar-border: oklch(0.2781 0.0296 256.85);
+  --sidebar-border: oklch(0.36 0.02 260 / 0.55);
   --sidebar-ring: oklch(0.7044 0.122 230.28);
 
   /* Premium shadows (dark) */
@@ -241,6 +255,57 @@
     );
     filter: blur(12px);
     opacity: 0.9;
+  }
+
+  /* Glass base (for panels that mimic the VisPro dark UI) */
+  .glass {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur));
+    box-shadow: var(--shadow-lg);
+  }
+
+  /* Glass card: adds subtle top highlight like the tiles/panels in pages 2–6 */
+  .glass-card {
+    position: relative;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur));
+    box-shadow: var(--shadow-xl);
+  }
+
+  .glass-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    pointer-events: none;
+    background: linear-gradient(
+      180deg,
+      var(--glass-highlight),
+      transparent 35%
+    );
+    opacity: 1;
+  }
+
+  /* Glass popover/menu: slightly denser, like the dropdown panel on page 3 */
+  .glass-popover {
+    background: color-mix(in oklch, var(--glass-bg) 92%, transparent);
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(calc(var(--glass-blur) + 4px));
+    -webkit-backdrop-filter: blur(calc(var(--glass-blur) + 4px));
+    box-shadow: var(--shadow-2xl);
+  }
+
+  /* Tile style: great for launchpad/action cards (page 2) */
+  .glass-tile {
+    background: color-mix(in oklch, var(--glass-bg) 85%, transparent);
+    border: 1px solid color-mix(in oklch, var(--glass-border) 120%, transparent);
+    backdrop-filter: blur(calc(var(--glass-blur) + 2px));
+    -webkit-backdrop-filter: blur(calc(var(--glass-blur) + 2px));
+    box-shadow: var(--shadow-lg);
   }
 
   /* Reduce glow intensity in light mode */
