@@ -1,0 +1,16 @@
+.DS_Store
+.env*
+.git
+.gitignore
+.idea
+.pnpm-store
+.turbo
+.vscode
+Dockerfile
+node_modules
+npm-debug.log*
+out
+pnpm-debug.log*
+public/r
+tmp
+.next

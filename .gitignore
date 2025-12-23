@@ -2,8 +2,12 @@
 .idea
 .vscode
 
-# dependencies
+# package manager
 /node_modules
+.pnpm-store
+pnpm-debug.log*
+
+# dependencies
 /.pnp
 .pnp.js
 .yarn/install-state.gz
@@ -22,6 +26,7 @@
 # misc
 .DS_Store
 *.pem
+.turbo
 
 # debug
 npm-debug.log*
@@ -36,4 +41,3 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
-next-env.d.ts
