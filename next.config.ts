@@ -1,20 +1,6 @@
-import type { NextConfig } from "next"
-import path from "path"
+import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  typescript: {
-    ignoreBuildErrors: true,
-  },
-  images: {
-    unoptimized: true,
-  },
-  webpack: (config) => {
-    config.resolve.alias = {
-      ...config.resolve.alias,
-      "@/registry": path.resolve("./registry.json"),
-    }
-    return config
-  },
   async headers() {
     return [
       {
@@ -26,8 +12,8 @@ const nextConfig: NextConfig = {
           },
         ],
       },
-    ]
+    ];
   },
-}
+};
 
-export default nextConfig
+export default nextConfig;

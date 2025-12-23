@@ -50,7 +50,7 @@ To use custom fonts, you can either use [
 [`@font-face`](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face) CSS rule in your 
 [`globals.css`](./src/app/globals.css).
 
-\`\`\`css
+```css
 @font-face {
     font-family: 'Montserrat';
     font-style: normal;
@@ -58,7 +58,7 @@ To use custom fonts, you can either use [
     src: url('https://fonts.gstatic.com/s/montserrat/v15/JTUSjIg1_i6t8kCHKm45xW5rygbi49c.woff2') format('woff2'),
     url('https://fonts.gstatic.com/s/montserrat/v15/JTUSjIg1_i6t8kCHKm45xW5rygbj49c.woff') format('woff');
 }
-\`\`\`
+```
 
 If you use `@font-face`, ensure you modify [`globals.css`](src/app/globals.css) tailwind configuration to map 
 your custom font variables to Tailwind fonts. Refer to this
@@ -80,13 +80,13 @@ This is made possible with an environment variable and basic Next.js Middleware.
 
 1. Create new `REGISTRY_AUTH_TOKEN`. For example, you can generate one:
 
-    \`\`\`bash
+    ```bash
     node -e "console.log(crypto.randomBytes(32).toString('base64url'))"
-    \`\`\`
+    ```
 
 2. Add new `middleware.ts` file to protect `/r/:path` routes
 
-    \`\`\`ts
+    ```ts
     // src/middleware.ts
     import { NextResponse } from "next/server";
     import type { NextRequest } from "next/server";
@@ -103,13 +103,13 @@ This is made possible with an environment variable and basic Next.js Middleware.
       return NextResponse.next();
     }
     
-    \`\`\`
+    ```
 
 When using `Open in v0`, the v0 platform will use the `token` search parameter to authenticate with your Registry:
 
-\`\`\`ts
+```ts
 const v0Url = `https://v0.dev/chat/api/open?url=https%3A%2F%2Fregistry-starter.vercel.app%2Fr%2Faccordion.json&token=${process.env.REGISTRY_AUTH_TOKEN}`
-\`\`\`
+```
 
 > [!NOTE]  
 > This method only protects the `/r/:path` routes, this does NOT protect the Registry's UI / component previews. If you
@@ -120,10 +120,10 @@ const v0Url = `https://v0.dev/chat/api/open?url=https%3A%2F%2Fregistry-starter.v
 
 ## Running locally
 
-\`\`\`bash
+```bash
 pnpm install
 pnpm dev
-\`\`\`
+```
 
 Your app should now be running on [localhost:3000](http://localhost:3000).
 
