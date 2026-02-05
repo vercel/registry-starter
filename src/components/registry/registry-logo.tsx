@@ -1,12 +1,16 @@
-import { Squirrel } from "lucide-react";
+import Image from "next/image";
 
 export function RegistryLogo() {
   return (
     <>
-      <div className="flex-shrink-0 rounded-md bg-primary p-1">
-        <Squirrel className="size-5 text-secondary" />
-      </div>
-      <span className="font-semibold">Registry</span>
+      <Image
+        src="/aavya-logomark.svg"
+        alt="AAVYA"
+        width={28}
+        height={28}
+        className="flex-shrink-0 rounded-md"
+      />
+      <span className="font-semibold">AAVYA</span>
     </>
   );
 }
