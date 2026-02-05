@@ -91,6 +91,11 @@
           "path": "postcss.config.mjs",
           "type": "registry:file",
           "target": "postcss.config.mjs"
+        },
+        {
+          "path": "tsconfig.json",
+          "type": "registry:file",
+          "target": "tsconfig.json"
         }
       ]
     },
