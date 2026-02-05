@@ -8,7 +8,7 @@ export function RegistryLogo() {
         alt="AAVYA"
         width={28}
         height={28}
-        className="flex-shrink-0 rounded-md"
+        className="flex-shrink-0 rounded-sm"
       />
       <span className="font-semibold">Design Registry</span>
     </>
