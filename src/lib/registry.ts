@@ -1,4 +1,4 @@
-import registry from "@/registry";
+import registry from "../../registry.json";
 
 export interface Component {
   name: string;
