@@ -11,7 +11,10 @@ import type { Product } from "@/lib/products";
 export default function ProductGrid({
   categories,
   products,
-}: { categories: string[]; products: Product[] }) {
+}: {
+  categories: string[];
+  products: Product[];
+}) {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
 
   const filteredProducts = selectedCategory

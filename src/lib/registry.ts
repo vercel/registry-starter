@@ -32,19 +32,19 @@ export function getRegistryItem(name: string): Component {
 }
 
 export function getBlocks() {
-  return getRegistryItems().filter(
-    (component) => component.type === "registry:block",
-  );
+  return getRegistryItems()
+    .filter((component) => component.type === "registry:block")
+    .sort((a, b) => a.title.localeCompare(b.title));
 }
 
 export function getUIPrimitives() {
-  return getRegistryItems().filter(
-    (component) => component.type === "registry:ui",
-  );
+  return getRegistryItems()
+    .filter((component) => component.type === "registry:ui")
+    .sort((a, b) => a.title.localeCompare(b.title));
 }
 
 export function getComponents() {
-  return getRegistryItems().filter(
-    (component) => component.type === "registry:component",
-  );
+  return getRegistryItems()
+    .filter((component) => component.type === "registry:component")
+    .sort((a, b) => a.title.localeCompare(b.title));
 }

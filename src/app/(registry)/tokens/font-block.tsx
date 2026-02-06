@@ -1,10 +1,6 @@
 import { cn } from "@/lib/utils";
 
-export function FontBlock({
-  className,
-}: {
-  className: string;
-}) {
+export function FontBlock({ className }: { className: string }) {
   return (
     <div className="flex items-center gap-4">
       <div>

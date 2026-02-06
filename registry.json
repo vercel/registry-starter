@@ -83,19 +83,34 @@
       "dependencies": ["radix-ui"],
       "files": [
         {
-          "path": "src/app/globals.css",
+          "path": "registry/common/globals.css",
           "type": "registry:style",
-          "target": "app/globals.css"
+          "target": "src/app/globals.css"
         },
         {
-          "path": "postcss.config.mjs",
+          "path": "registry/common/postcss.config.mjs",
           "type": "registry:file",
           "target": "postcss.config.mjs"
         },
         {
-          "path": "tsconfig.json",
+          "path": "registry/common/tsconfig.json",
           "type": "registry:file",
           "target": "tsconfig.json"
+        },
+        {
+          "path": "registry/common/package.json",
+          "type": "registry:file",
+          "target": "package.json"
+        },
+        {
+          "path": "registry/common/utils.ts",
+          "type": "registry:lib",
+          "target": "src/lib/utils.ts"
+        },
+        {
+          "path": "registry/common/use-mobile.ts",
+          "type": "registry:hook",
+          "target": "src/hooks/use-mobile.ts"
         }
       ]
     },
@@ -105,21 +120,73 @@
       "title": "Blank",
       "description": "A blank application with all brand components and code",
       "registryDependencies": [
+        "https://registry-starter.vercel.app/r/theme.json",
         "https://registry-starter.vercel.app/r/brand-header.json",
         "https://registry-starter.vercel.app/r/brand-sidebar.json",
+        "https://registry-starter.vercel.app/r/login.json",
+        "https://registry-starter.vercel.app/r/logo.json",
+        "https://registry-starter.vercel.app/r/hero.json",
+        "https://registry-starter.vercel.app/r/promo.json",
         "https://registry-starter.vercel.app/r/product-grid.json",
-        "https://registry-starter.vercel.app/r/theme.json"
+        "https://registry-starter.vercel.app/r/accordion.json",
+        "https://registry-starter.vercel.app/r/alert.json",
+        "https://registry-starter.vercel.app/r/alert-dialog.json",
+        "https://registry-starter.vercel.app/r/aspect-ratio.json",
+        "https://registry-starter.vercel.app/r/avatar.json",
+        "https://registry-starter.vercel.app/r/badge.json",
+        "https://registry-starter.vercel.app/r/breadcrumb.json",
+        "https://registry-starter.vercel.app/r/button.json",
+        "https://registry-starter.vercel.app/r/calendar.json",
+        "https://registry-starter.vercel.app/r/card.json",
+        "https://registry-starter.vercel.app/r/carousel.json",
+        "https://registry-starter.vercel.app/r/chart.json",
+        "https://registry-starter.vercel.app/r/checkbox.json",
+        "https://registry-starter.vercel.app/r/collapsible.json",
+        "https://registry-starter.vercel.app/r/command.json",
+        "https://registry-starter.vercel.app/r/context-menu.json",
+        "https://registry-starter.vercel.app/r/dialog.json",
+        "https://registry-starter.vercel.app/r/drawer.json",
+        "https://registry-starter.vercel.app/r/dropdown-menu.json",
+        "https://registry-starter.vercel.app/r/form.json",
+        "https://registry-starter.vercel.app/r/hover-card.json",
+        "https://registry-starter.vercel.app/r/input.json",
+        "https://registry-starter.vercel.app/r/input-otp.json",
+        "https://registry-starter.vercel.app/r/label.json",
+        "https://registry-starter.vercel.app/r/menubar.json",
+        "https://registry-starter.vercel.app/r/navigation-menu.json",
+        "https://registry-starter.vercel.app/r/pagination.json",
+        "https://registry-starter.vercel.app/r/popover.json",
+        "https://registry-starter.vercel.app/r/progress.json",
+        "https://registry-starter.vercel.app/r/radio-group.json",
+        "https://registry-starter.vercel.app/r/resizable.json",
+        "https://registry-starter.vercel.app/r/scroll-area.json",
+        "https://registry-starter.vercel.app/r/select.json",
+        "https://registry-starter.vercel.app/r/separator.json",
+        "https://registry-starter.vercel.app/r/sheet.json",
+        "https://registry-starter.vercel.app/r/sidebar.json",
+        "https://registry-starter.vercel.app/r/skeleton.json",
+        "https://registry-starter.vercel.app/r/slider.json",
+        "https://registry-starter.vercel.app/r/sonner.json",
+        "https://registry-starter.vercel.app/r/switch.json",
+        "https://registry-starter.vercel.app/r/table.json",
+        "https://registry-starter.vercel.app/r/tabs.json",
+        "https://registry-starter.vercel.app/r/textarea.json",
+        "https://registry-starter.vercel.app/r/toggle.json",
+        "https://registry-starter.vercel.app/r/toggle-group.json",
+        "https://registry-starter.vercel.app/r/tooltip.json",
+        "https://registry-starter.vercel.app/r/data-table.json",
+        "https://registry-starter.vercel.app/r/date-picker.json"
       ],
       "files": [
         {
-          "path": "src/layouts/minimal-layout.tsx",
+          "path": "registry/layouts/minimal-layout.tsx",
           "type": "registry:file",
-          "target": "app/layout.tsx"
+          "target": "src/app/layout.tsx"
         },
         {
           "path": "src/app/demo/[name]/blocks/blank-page.tsx",
           "type": "registry:page",
-          "target": "app/page.tsx"
+          "target": "src/app/page.tsx"
         }
       ]
     },
@@ -129,21 +196,73 @@
       "title": "Dashboard",
       "description": "A dashboard application with your brand themed components",
       "registryDependencies": [
-        "https://registry-starter.vercel.app/r/sonner.json",
+        "https://registry-starter.vercel.app/r/theme.json",
         "https://registry-starter.vercel.app/r/brand-header.json",
         "https://registry-starter.vercel.app/r/brand-sidebar.json",
-        "https://registry-starter.vercel.app/r/theme.json"
+        "https://registry-starter.vercel.app/r/login.json",
+        "https://registry-starter.vercel.app/r/logo.json",
+        "https://registry-starter.vercel.app/r/hero.json",
+        "https://registry-starter.vercel.app/r/promo.json",
+        "https://registry-starter.vercel.app/r/product-grid.json",
+        "https://registry-starter.vercel.app/r/accordion.json",
+        "https://registry-starter.vercel.app/r/alert.json",
+        "https://registry-starter.vercel.app/r/alert-dialog.json",
+        "https://registry-starter.vercel.app/r/aspect-ratio.json",
+        "https://registry-starter.vercel.app/r/avatar.json",
+        "https://registry-starter.vercel.app/r/badge.json",
+        "https://registry-starter.vercel.app/r/breadcrumb.json",
+        "https://registry-starter.vercel.app/r/button.json",
+        "https://registry-starter.vercel.app/r/calendar.json",
+        "https://registry-starter.vercel.app/r/card.json",
+        "https://registry-starter.vercel.app/r/carousel.json",
+        "https://registry-starter.vercel.app/r/chart.json",
+        "https://registry-starter.vercel.app/r/checkbox.json",
+        "https://registry-starter.vercel.app/r/collapsible.json",
+        "https://registry-starter.vercel.app/r/command.json",
+        "https://registry-starter.vercel.app/r/context-menu.json",
+        "https://registry-starter.vercel.app/r/dialog.json",
+        "https://registry-starter.vercel.app/r/drawer.json",
+        "https://registry-starter.vercel.app/r/dropdown-menu.json",
+        "https://registry-starter.vercel.app/r/form.json",
+        "https://registry-starter.vercel.app/r/hover-card.json",
+        "https://registry-starter.vercel.app/r/input.json",
+        "https://registry-starter.vercel.app/r/input-otp.json",
+        "https://registry-starter.vercel.app/r/label.json",
+        "https://registry-starter.vercel.app/r/menubar.json",
+        "https://registry-starter.vercel.app/r/navigation-menu.json",
+        "https://registry-starter.vercel.app/r/pagination.json",
+        "https://registry-starter.vercel.app/r/popover.json",
+        "https://registry-starter.vercel.app/r/progress.json",
+        "https://registry-starter.vercel.app/r/radio-group.json",
+        "https://registry-starter.vercel.app/r/resizable.json",
+        "https://registry-starter.vercel.app/r/scroll-area.json",
+        "https://registry-starter.vercel.app/r/select.json",
+        "https://registry-starter.vercel.app/r/separator.json",
+        "https://registry-starter.vercel.app/r/sheet.json",
+        "https://registry-starter.vercel.app/r/sidebar.json",
+        "https://registry-starter.vercel.app/r/skeleton.json",
+        "https://registry-starter.vercel.app/r/slider.json",
+        "https://registry-starter.vercel.app/r/sonner.json",
+        "https://registry-starter.vercel.app/r/switch.json",
+        "https://registry-starter.vercel.app/r/table.json",
+        "https://registry-starter.vercel.app/r/tabs.json",
+        "https://registry-starter.vercel.app/r/textarea.json",
+        "https://registry-starter.vercel.app/r/toggle.json",
+        "https://registry-starter.vercel.app/r/toggle-group.json",
+        "https://registry-starter.vercel.app/r/tooltip.json",
+        "https://registry-starter.vercel.app/r/data-table.json",
+        "https://registry-starter.vercel.app/r/date-picker.json"
       ],
       "files": [
         {
-          "path": "src/layouts/shell-layout.tsx",
+          "path": "registry/layouts/shell-layout.tsx",
           "type": "registry:file",
-          "target": "app/layout.tsx"
+          "target": "src/app/layout.tsx"
         },
         {
           "path": "src/app/demo/[name]/blocks/dashboard-page.tsx",
           "type": "registry:page",
-          "target": "app/page.tsx"
+          "target": "src/app/page.tsx"
         }
       ]
     },
@@ -153,19 +272,73 @@
       "title": "Store",
       "description": "A store application with your brand themed components",
       "registryDependencies": [
+        "https://registry-starter.vercel.app/r/theme.json",
+        "https://registry-starter.vercel.app/r/brand-header.json",
+        "https://registry-starter.vercel.app/r/brand-sidebar.json",
+        "https://registry-starter.vercel.app/r/login.json",
+        "https://registry-starter.vercel.app/r/logo.json",
+        "https://registry-starter.vercel.app/r/hero.json",
+        "https://registry-starter.vercel.app/r/promo.json",
         "https://registry-starter.vercel.app/r/product-grid.json",
-        "https://registry-starter.vercel.app/r/theme.json"
+        "https://registry-starter.vercel.app/r/accordion.json",
+        "https://registry-starter.vercel.app/r/alert.json",
+        "https://registry-starter.vercel.app/r/alert-dialog.json",
+        "https://registry-starter.vercel.app/r/aspect-ratio.json",
+        "https://registry-starter.vercel.app/r/avatar.json",
+        "https://registry-starter.vercel.app/r/badge.json",
+        "https://registry-starter.vercel.app/r/breadcrumb.json",
+        "https://registry-starter.vercel.app/r/button.json",
+        "https://registry-starter.vercel.app/r/calendar.json",
+        "https://registry-starter.vercel.app/r/card.json",
+        "https://registry-starter.vercel.app/r/carousel.json",
+        "https://registry-starter.vercel.app/r/chart.json",
+        "https://registry-starter.vercel.app/r/checkbox.json",
+        "https://registry-starter.vercel.app/r/collapsible.json",
+        "https://registry-starter.vercel.app/r/command.json",
+        "https://registry-starter.vercel.app/r/context-menu.json",
+        "https://registry-starter.vercel.app/r/dialog.json",
+        "https://registry-starter.vercel.app/r/drawer.json",
+        "https://registry-starter.vercel.app/r/dropdown-menu.json",
+        "https://registry-starter.vercel.app/r/form.json",
+        "https://registry-starter.vercel.app/r/hover-card.json",
+        "https://registry-starter.vercel.app/r/input.json",
+        "https://registry-starter.vercel.app/r/input-otp.json",
+        "https://registry-starter.vercel.app/r/label.json",
+        "https://registry-starter.vercel.app/r/menubar.json",
+        "https://registry-starter.vercel.app/r/navigation-menu.json",
+        "https://registry-starter.vercel.app/r/pagination.json",
+        "https://registry-starter.vercel.app/r/popover.json",
+        "https://registry-starter.vercel.app/r/progress.json",
+        "https://registry-starter.vercel.app/r/radio-group.json",
+        "https://registry-starter.vercel.app/r/resizable.json",
+        "https://registry-starter.vercel.app/r/scroll-area.json",
+        "https://registry-starter.vercel.app/r/select.json",
+        "https://registry-starter.vercel.app/r/separator.json",
+        "https://registry-starter.vercel.app/r/sheet.json",
+        "https://registry-starter.vercel.app/r/sidebar.json",
+        "https://registry-starter.vercel.app/r/skeleton.json",
+        "https://registry-starter.vercel.app/r/slider.json",
+        "https://registry-starter.vercel.app/r/sonner.json",
+        "https://registry-starter.vercel.app/r/switch.json",
+        "https://registry-starter.vercel.app/r/table.json",
+        "https://registry-starter.vercel.app/r/tabs.json",
+        "https://registry-starter.vercel.app/r/textarea.json",
+        "https://registry-starter.vercel.app/r/toggle.json",
+        "https://registry-starter.vercel.app/r/toggle-group.json",
+        "https://registry-starter.vercel.app/r/tooltip.json",
+        "https://registry-starter.vercel.app/r/data-table.json",
+        "https://registry-starter.vercel.app/r/date-picker.json"
       ],
       "files": [
         {
-          "path": "src/layouts/minimal-layout.tsx",
+          "path": "registry/layouts/minimal-layout.tsx",
           "type": "registry:file",
-          "target": "app/layout.tsx"
+          "target": "src/app/layout.tsx"
         },
         {
           "path": "src/app/demo/[name]/blocks/store-page.tsx",
           "type": "registry:page",
-          "target": "app/page.tsx"
+          "target": "src/app/page.tsx"
         }
       ]
     },
@@ -175,28 +348,29 @@
       "title": "Brand Header",
       "description": "A styled, simple, reusable header",
       "registryDependencies": [
-        "button",
-        "input",
-        "avatar",
-        "sidebar",
+        "https://registry-starter.vercel.app/r/theme.json",
+        "https://registry-starter.vercel.app/r/button.json",
+        "https://registry-starter.vercel.app/r/input.json",
+        "https://registry-starter.vercel.app/r/avatar.json",
+        "https://registry-starter.vercel.app/r/sidebar.json",
         "https://registry-starter.vercel.app/r/sonner.json",
-        "https://registry-starter.vercel.app/r/logo.json",
-        "https://registry-starter.vercel.app/r/theme.json"
+        "https://registry-starter.vercel.app/r/logo.json"
       ],
       "files": [
         {
           "path": "src/components/brand-header.tsx",
-          "type": "registry:component"
+          "type": "registry:component",
+          "target": "src/components/brand-header.tsx"
         },
         {
-          "path": "src/layouts/shell-layout.tsx",
+          "path": "registry/layouts/shell-layout.tsx",
           "type": "registry:file",
-          "target": "app/layout.tsx"
+          "target": "src/app/layout.tsx"
         },
         {
           "path": "src/app/demo/[name]/blocks/blank-page.tsx",
           "type": "registry:page",
-          "target": "app/page.tsx"
+          "target": "src/app/page.tsx"
         }
       ]
     },
@@ -206,26 +380,27 @@
       "title": "Brand Sidebar",
       "description": "A styled, simple, reusable sidebar",
       "registryDependencies": [
-        "badge",
-        "button",
-        "sidebar",
-        "https://registry-starter.vercel.app/r/sonner.json",
-        "https://registry-starter.vercel.app/r/theme.json"
+        "https://registry-starter.vercel.app/r/theme.json",
+        "https://registry-starter.vercel.app/r/badge.json",
+        "https://registry-starter.vercel.app/r/button.json",
+        "https://registry-starter.vercel.app/r/sidebar.json",
+        "https://registry-starter.vercel.app/r/sonner.json"
       ],
       "files": [
         {
           "path": "src/components/brand-sidebar.tsx",
-          "type": "registry:component"
+          "type": "registry:component",
+          "target": "src/components/brand-sidebar.tsx"
         },
         {
-          "path": "src/layouts/shell-layout.tsx",
+          "path": "registry/layouts/shell-layout.tsx",
           "type": "registry:file",
-          "target": "app/layout.tsx"
+          "target": "src/app/layout.tsx"
         },
         {
           "path": "src/app/demo/[name]/blocks/blank-page.tsx",
           "type": "registry:page",
-          "target": "app/page.tsx"
+          "target": "src/app/page.tsx"
         }
       ]
     },
@@ -235,25 +410,26 @@
       "title": "Login",
       "description": "Username & password login section with customer quote.",
       "registryDependencies": [
-        "badge",
-        "button",
         "https://registry-starter.vercel.app/r/theme.json",
+        "https://registry-starter.vercel.app/r/badge.json",
+        "https://registry-starter.vercel.app/r/button.json",
         "https://registry-starter.vercel.app/r/logo.json"
       ],
       "files": [
         {
           "path": "src/components/login.tsx",
-          "type": "registry:component"
+          "type": "registry:component",
+          "target": "src/components/login.tsx"
         },
         {
-          "path": "src/layouts/minimal-layout.tsx",
+          "path": "registry/layouts/minimal-layout.tsx",
           "type": "registry:file",
-          "target": "app/layout.tsx"
+          "target": "src/app/layout.tsx"
         },
         {
           "path": "src/app/demo/[name]/blocks/blank-page.tsx",
           "type": "registry:page",
-          "target": "app/page.tsx"
+          "target": "src/app/page.tsx"
         }
       ]
     },
@@ -268,17 +444,18 @@
       "files": [
         {
           "path": "src/components/logo.tsx",
-          "type": "registry:component"
+          "type": "registry:component",
+          "target": "src/components/logo.tsx"
         },
         {
-          "path": "src/layouts/minimal-layout.tsx",
+          "path": "registry/layouts/minimal-layout.tsx",
           "type": "registry:file",
-          "target": "app/layout.tsx"
+          "target": "src/app/layout.tsx"
         },
         {
           "path": "src/app/demo/[name]/blocks/blank-page.tsx",
           "type": "registry:page",
-          "target": "app/page.tsx"
+          "target": "src/app/page.tsx"
         }
       ]
     },
@@ -288,24 +465,25 @@
       "title": "Hero",
       "description": "Attention-grabbing section for the top of your landing pages.",
       "registryDependencies": [
-        "badge",
-        "button",
-        "https://registry-starter.vercel.app/r/theme.json"
+        "https://registry-starter.vercel.app/r/theme.json",
+        "https://registry-starter.vercel.app/r/badge.json",
+        "https://registry-starter.vercel.app/r/button.json"
       ],
       "files": [
         {
           "path": "src/components/hero.tsx",
-          "type": "registry:component"
+          "type": "registry:component",
+          "target": "src/components/hero.tsx"
         },
         {
-          "path": "src/layouts/minimal-layout.tsx",
+          "path": "registry/layouts/minimal-layout.tsx",
           "type": "registry:file",
-          "target": "app/layout.tsx"
+          "target": "src/app/layout.tsx"
         },
         {
           "path": "src/app/demo/[name]/blocks/blank-page.tsx",
           "type": "registry:page",
-          "target": "app/page.tsx"
+          "target": "src/app/page.tsx"
         }
       ]
     },
@@ -315,23 +493,24 @@
       "title": "Promo",
       "description": "Attention-grabbing section to display the current promotional deal.",
       "registryDependencies": [
-        "button",
-        "https://registry-starter.vercel.app/r/theme.json"
+        "https://registry-starter.vercel.app/r/theme.json",
+        "https://registry-starter.vercel.app/r/button.json"
       ],
       "files": [
         {
           "path": "src/components/promo.tsx",
-          "type": "registry:component"
+          "type": "registry:component",
+          "target": "src/components/promo.tsx"
         },
         {
-          "path": "src/layouts/minimal-layout.tsx",
+          "path": "registry/layouts/minimal-layout.tsx",
           "type": "registry:file",
-          "target": "app/layout.tsx"
+          "target": "src/app/layout.tsx"
         },
         {
           "path": "src/app/demo/[name]/blocks/blank-page.tsx",
           "type": "registry:page",
-          "target": "app/page.tsx"
+          "target": "src/app/page.tsx"
         }
       ]
     },
@@ -346,16 +525,18 @@
       "files": [
         {
           "path": "src/components/product-grid.tsx",
-          "type": "registry:component"
+          "type": "registry:component",
+          "target": "src/components/product-grid.tsx"
         },
         {
           "path": "src/lib/products.ts",
-          "type": "registry:lib"
+          "type": "registry:lib",
+          "target": "src/lib/products.ts"
         },
         {
-          "path": "src/layouts/minimal-layout.tsx",
+          "path": "registry/layouts/minimal-layout.tsx",
           "type": "registry:file",
-          "target": "app/layout.tsx"
+          "target": "src/app/layout.tsx"
         }
       ]
     },
@@ -364,15 +545,10 @@
       "type": "registry:ui",
       "title": "Accordion",
       "description": "A vertically stacked set of interactive headings that each reveal a section of content.",
-      "registryDependencies": [
-        "accordion",
-        "https://registry-starter.vercel.app/r/theme.json"
-      ],
       "files": [
         {
-          "path": "src/layouts/minimal-layout.tsx",
-          "type": "registry:file",
-          "target": "app/layout.tsx"
+          "path": "src/components/ui/accordion.tsx",
+          "type": "registry:ui"
         }
       ]
     },
@@ -381,15 +557,34 @@
       "type": "registry:ui",
       "title": "Alert",
       "description": "Displays a callout for user attention.",
-      "registryDependencies": [
-        "alert",
-        "https://registry-starter.vercel.app/r/theme.json"
-      ],
       "files": [
         {
-          "path": "src/layouts/minimal-layout.tsx",
-          "type": "registry:file",
-          "target": "app/layout.tsx"
+          "path": "src/components/ui/alert.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "alert-dialog",
+      "type": "registry:ui",
+      "title": "Alert Dialog",
+      "description": "A modal dialog that interrupts the user with important content and expects a response.",
+      "files": [
+        {
+          "path": "src/components/ui/alert-dialog.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "aspect-ratio",
+      "type": "registry:ui",
+      "title": "Aspect Ratio",
+      "description": "Displays content within a desired ratio.",
+      "files": [
+        {
+          "path": "src/components/ui/aspect-ratio.tsx",
+          "type": "registry:ui"
         }
       ]
     },
@@ -398,15 +593,10 @@
       "type": "registry:ui",
       "title": "Avatar",
       "description": "An image element with a fallback for representing the user.",
-      "registryDependencies": [
-        "avatar",
-        "https://registry-starter.vercel.app/r/theme.json"
-      ],
       "files": [
         {
-          "path": "src/layouts/minimal-layout.tsx",
-          "type": "registry:file",
-          "target": "app/layout.tsx"
+          "path": "src/components/ui/avatar.tsx",
+          "type": "registry:ui"
         }
       ]
     },
@@ -415,15 +605,10 @@
       "type": "registry:ui",
       "title": "Badge",
       "description": "Displays a small count or status indicator.",
-      "registryDependencies": [
-        "badge",
-        "https://registry-starter.vercel.app/r/theme.json"
-      ],
       "files": [
         {
-          "path": "src/layouts/minimal-layout.tsx",
-          "type": "registry:file",
-          "target": "app/layout.tsx"
+          "path": "src/components/ui/badge.tsx",
+          "type": "registry:ui"
         }
       ]
     },
@@ -432,15 +617,10 @@
       "type": "registry:ui",
       "title": "Breadcrumb",
       "description": "Displays the path to the current resource using a hierarchy of links.",
-      "registryDependencies": [
-        "breadcrumb",
-        "https://registry-starter.vercel.app/r/theme.json"
-      ],
       "files": [
         {
-          "path": "src/layouts/minimal-layout.tsx",
-          "type": "registry:file",
-          "target": "app/layout.tsx"
+          "path": "src/components/ui/breadcrumb.tsx",
+          "type": "registry:ui"
         }
       ]
     },
@@ -449,15 +629,10 @@
       "type": "registry:ui",
       "title": "Button",
       "description": "Allows users to take actions with a single click or tap.",
-      "registryDependencies": [
-        "button",
-        "https://registry-starter.vercel.app/r/theme.json"
-      ],
       "files": [
         {
-          "path": "src/layouts/minimal-layout.tsx",
-          "type": "registry:file",
-          "target": "app/layout.tsx"
+          "path": "src/components/ui/button.tsx",
+          "type": "registry:ui"
         }
       ]
     },
@@ -466,15 +641,10 @@
       "type": "registry:ui",
       "title": "Calendar",
       "description": "A date field component that allows users to enter and edit date.",
-      "registryDependencies": [
-        "calendar",
-        "https://registry-starter.vercel.app/r/theme.json"
-      ],
       "files": [
         {
-          "path": "src/layouts/minimal-layout.tsx",
-          "type": "registry:file",
-          "target": "app/layout.tsx"
+          "path": "src/components/ui/calendar.tsx",
+          "type": "registry:ui"
         }
       ]
     },
@@ -483,15 +653,22 @@
       "type": "registry:ui",
       "title": "Card",
       "description": "Containers for displaying content and actions about a single subject.",
-      "registryDependencies": [
-        "card",
-        "https://registry-starter.vercel.app/r/theme.json"
-      ],
       "files": [
         {
-          "path": "src/layouts/minimal-layout.tsx",
-          "type": "registry:file",
-          "target": "app/layout.tsx"
+          "path": "src/components/ui/card.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "carousel",
+      "type": "registry:ui",
+      "title": "Carousel",
+      "description": "A carousel with motion and swipe built using Embla.",
+      "files": [
+        {
+          "path": "src/components/ui/carousel.tsx",
+          "type": "registry:ui"
         }
       ]
     },
@@ -500,15 +677,10 @@
       "type": "registry:ui",
       "title": "Chart",
       "description": "Beautiful charts. Built using Recharts. Copy and paste into your apps.",
-      "registryDependencies": [
-        "chart",
-        "https://registry-starter.vercel.app/r/theme.json"
-      ],
       "files": [
         {
-          "path": "src/layouts/minimal-layout.tsx",
-          "type": "registry:file",
-          "target": "app/layout.tsx"
+          "path": "src/components/ui/chart.tsx",
+          "type": "registry:ui"
         }
       ]
     },
@@ -517,15 +689,409 @@
       "type": "registry:ui",
       "title": "Checkbox",
       "description": "Allows users to select multiple items from a list of options.",
+      "files": [
+        {
+          "path": "src/components/ui/checkbox.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "collapsible",
+      "type": "registry:ui",
+      "title": "Collapsible",
+      "description": "An interactive component which expands/collapses a panel.",
+      "files": [
+        {
+          "path": "src/components/ui/collapsible.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "command",
+      "type": "registry:ui",
+      "title": "Command",
+      "description": "Fast, composable, unstyled command menu for React.",
+      "files": [
+        {
+          "path": "src/components/ui/command.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "context-menu",
+      "type": "registry:ui",
+      "title": "Context Menu",
+      "description": "Displays a menu located at the pointer, triggered by a right-click or a long-press.",
+      "files": [
+        {
+          "path": "src/components/ui/context-menu.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "dialog",
+      "type": "registry:ui",
+      "title": "Dialog",
+      "description": "A modal dialog that interrupts the user with important content.",
+      "files": [
+        {
+          "path": "src/components/ui/dialog.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "drawer",
+      "type": "registry:ui",
+      "title": "Drawer",
+      "description": "A drawer component for React.",
+      "files": [
+        {
+          "path": "src/components/ui/drawer.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "dropdown-menu",
+      "type": "registry:ui",
+      "title": "Dropdown Menu",
+      "description": "Displays a menu to the user triggered by a button.",
+      "files": [
+        {
+          "path": "src/components/ui/dropdown-menu.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "form",
+      "type": "registry:ui",
+      "title": "Form",
+      "description": "Building forms with React Hook Form and Zod.",
+      "files": [
+        {
+          "path": "src/components/ui/form.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "hover-card",
+      "type": "registry:ui",
+      "title": "Hover Card",
+      "description": "For sighted users to preview content available behind a link.",
+      "files": [
+        {
+          "path": "src/components/ui/hover-card.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "input",
+      "type": "registry:ui",
+      "title": "Input",
+      "description": "Displays a form input field or a component that looks like an input field.",
+      "files": [
+        {
+          "path": "src/components/ui/input.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "input-otp",
+      "type": "registry:ui",
+      "title": "Input OTP",
+      "description": "Accessible one-time password component with copy paste functionality.",
+      "files": [
+        {
+          "path": "src/components/ui/input-otp.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "label",
+      "type": "registry:ui",
+      "title": "Label",
+      "description": "Renders an accessible label associated with controls.",
+      "files": [
+        {
+          "path": "src/components/ui/label.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "menubar",
+      "type": "registry:ui",
+      "title": "Menubar",
+      "description": "A visually persistent menu common in desktop applications.",
+      "files": [
+        {
+          "path": "src/components/ui/menubar.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "navigation-menu",
+      "type": "registry:ui",
+      "title": "Navigation Menu",
+      "description": "A collection of links for navigating websites.",
+      "files": [
+        {
+          "path": "src/components/ui/navigation-menu.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "pagination",
+      "type": "registry:ui",
+      "title": "Pagination",
+      "description": "Pagination with page navigation, next and previous links.",
+      "files": [
+        {
+          "path": "src/components/ui/pagination.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "popover",
+      "type": "registry:ui",
+      "title": "Popover",
+      "description": "Displays rich content in a portal, triggered by a button.",
+      "files": [
+        {
+          "path": "src/components/ui/popover.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "progress",
+      "type": "registry:ui",
+      "title": "Progress",
+      "description": "Displays an indicator showing the completion progress of a task.",
+      "files": [
+        {
+          "path": "src/components/ui/progress.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "radio-group",
+      "type": "registry:ui",
+      "title": "Radio Group",
+      "description": "A set of checkable buttons where only one button can be checked at a time.",
+      "files": [
+        {
+          "path": "src/components/ui/radio-group.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "resizable",
+      "type": "registry:ui",
+      "title": "Resizable",
+      "description": "Accessible resizable panel groups and layouts with keyboard support.",
+      "files": [
+        {
+          "path": "src/components/ui/resizable.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "scroll-area",
+      "type": "registry:ui",
+      "title": "Scroll Area",
+      "description": "Augments native scroll functionality for custom, cross-browser styling.",
+      "files": [
+        {
+          "path": "src/components/ui/scroll-area.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "select",
+      "type": "registry:ui",
+      "title": "Select",
+      "description": "Displays a list of options for the user to pick from—triggered by a button.",
+      "files": [
+        {
+          "path": "src/components/ui/select.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "separator",
+      "type": "registry:ui",
+      "title": "Separator",
+      "description": "Visually or semantically separates content.",
+      "files": [
+        {
+          "path": "src/components/ui/separator.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "sheet",
+      "type": "registry:ui",
+      "title": "Sheet",
+      "description": "Extends the Dialog component to display content that complements the main content of the screen.",
+      "files": [
+        {
+          "path": "src/components/ui/sheet.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "sidebar",
+      "type": "registry:ui",
+      "title": "Sidebar",
+      "description": "A composable, themeable and customizable sidebar component.",
+      "files": [
+        {
+          "path": "src/components/ui/sidebar.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "skeleton",
+      "type": "registry:ui",
+      "title": "Skeleton",
+      "description": "Use to show a placeholder while content is loading.",
+      "files": [
+        {
+          "path": "src/components/ui/skeleton.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "slider",
+      "type": "registry:ui",
+      "title": "Slider",
+      "description": "An input where the user selects a value from within a given range.",
+      "files": [
+        {
+          "path": "src/components/ui/slider.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "sonner",
+      "type": "registry:ui",
+      "title": "Sonner",
+      "description": "An opinionated toast component for React.",
+      "files": [
+        {
+          "path": "src/components/ui/sonner.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "switch",
+      "type": "registry:ui",
+      "title": "Switch",
+      "description": "A control that allows the user to toggle between checked and not checked.",
+      "files": [
+        {
+          "path": "src/components/ui/switch.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "table",
+      "type": "registry:ui",
+      "title": "Table",
+      "description": "A responsive table component.",
+      "files": [
+        {
+          "path": "src/components/ui/table.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabs",
+      "type": "registry:ui",
+      "title": "Tabs",
+      "description": "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
+      "files": [
+        {
+          "path": "src/components/ui/tabs.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "textarea",
+      "type": "registry:ui",
+      "title": "Textarea",
+      "description": "Displays a form textarea or a component that looks like a textarea.",
+      "files": [
+        {
+          "path": "src/components/ui/textarea.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "toggle",
+      "type": "registry:ui",
+      "title": "Toggle",
+      "description": "A two-state button that can be either on or off.",
+      "files": [
+        {
+          "path": "src/components/ui/toggle.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "toggle-group",
+      "type": "registry:ui",
+      "title": "Toggle Group",
+      "description": "A set of two-state buttons that can be toggled on or off.",
       "registryDependencies": [
-        "checkbox",
-        "https://registry-starter.vercel.app/r/theme.json"
+        "https://registry-starter.vercel.app/r/toggle.json"
       ],
       "files": [
         {
-          "path": "src/layouts/minimal-layout.tsx",
-          "type": "registry:file",
-          "target": "app/layout.tsx"
+          "path": "src/components/ui/toggle-group.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tooltip",
+      "type": "registry:ui",
+      "title": "Tooltip",
+      "description": "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
+      "files": [
+        {
+          "path": "src/components/ui/tooltip.tsx",
+          "type": "registry:ui"
         }
       ]
     },
@@ -535,276 +1101,21 @@
       "title": "Data Table",
       "description": "Powerful table and datagrids built using TanStack Table.",
       "registryDependencies": [
-        "data-table",
-        "https://registry-starter.vercel.app/r/theme.json"
+        "https://registry-starter.vercel.app/r/table.json"
       ],
-      "files": [
-        {
-          "path": "src/layouts/minimal-layout.tsx",
-          "type": "registry:file",
-          "target": "app/layout.tsx"
-        }
-      ]
+      "files": []
     },
     {
       "name": "date-picker",
       "type": "registry:ui",
       "title": "Date Picker",
-      "description": "Displays the path to the current resource using a hierarchy of links.",
+      "description": "A date picker component with range and presets.",
       "registryDependencies": [
-        "date-picker",
-        "https://registry-starter.vercel.app/r/theme.json"
+        "https://registry-starter.vercel.app/r/button.json",
+        "https://registry-starter.vercel.app/r/calendar.json",
+        "https://registry-starter.vercel.app/r/popover.json"
       ],
-      "files": [
-        {
-          "path": "src/layouts/minimal-layout.tsx",
-          "type": "registry:file",
-          "target": "app/layout.tsx"
-        }
-      ]
-    },
-    {
-      "name": "dialog",
-      "type": "registry:ui",
-      "title": "Dialog",
-      "description": "A modal dialog that interrupts the user with important content.",
-      "registryDependencies": [
-        "dialog",
-        "https://registry-starter.vercel.app/r/theme.json"
-      ],
-      "files": [
-        {
-          "path": "src/layouts/minimal-layout.tsx",
-          "type": "registry:file",
-          "target": "app/layout.tsx"
-        }
-      ]
-    },
-    {
-      "name": "dropdown-menu",
-      "type": "registry:ui",
-      "title": "Dropdown",
-      "description": "Displays a menu to the user triggered by a button.",
-      "registryDependencies": [
-        "dropdown-menu",
-        "https://registry-starter.vercel.app/r/theme.json"
-      ],
-      "files": [
-        {
-          "path": "src/layouts/minimal-layout.tsx",
-          "type": "registry:file",
-          "target": "app/layout.tsx"
-        }
-      ]
-    },
-    {
-      "name": "input",
-      "type": "registry:ui",
-      "title": "Input",
-      "description": "Displays a form input field or a component that looks like an input field.",
-      "registryDependencies": [
-        "input",
-        "https://registry-starter.vercel.app/r/theme.json"
-      ],
-      "files": [
-        {
-          "path": "src/layouts/minimal-layout.tsx",
-          "type": "registry:file",
-          "target": "app/layout.tsx"
-        }
-      ]
-    },
-    {
-      "name": "menu-bar",
-      "type": "registry:ui",
-      "title": "Menu Bar",
-      "description": "A visually persistent menu common in desktop applications that provides quick access to a consistent set of commands.",
-      "registryDependencies": [
-        "menu-bar",
-        "https://registry-starter.vercel.app/r/theme.json"
-      ],
-      "files": [
-        {
-          "path": "src/layouts/minimal-layout.tsx",
-          "type": "registry:file",
-          "target": "app/layout.tsx"
-        }
-      ]
-    },
-    {
-      "name": "select",
-      "type": "registry:ui",
-      "title": "Select",
-      "description": "Displays a list of options for the user to pick from—triggered by a button.",
-      "registryDependencies": [
-        "select",
-        "https://registry-starter.vercel.app/r/theme.json"
-      ],
-      "files": [
-        {
-          "path": "src/layouts/minimal-layout.tsx",
-          "type": "registry:file",
-          "target": "app/layout.tsx"
-        }
-      ]
-    },
-    {
-      "name": "separator",
-      "type": "registry:ui",
-      "title": "Separator",
-      "description": "Visually or semantically separates content.",
-      "registryDependencies": [
-        "separator",
-        "https://registry-starter.vercel.app/r/theme.json"
-      ],
-      "files": [
-        {
-          "path": "src/layouts/minimal-layout.tsx",
-          "type": "registry:file",
-          "target": "app/layout.tsx"
-        }
-      ]
-    },
-    {
-      "name": "skeleton",
-      "type": "registry:ui",
-      "title": "Skeleton",
-      "description": "Use to show a placeholder while content is loading.",
-      "registryDependencies": [
-        "skeleton",
-        "https://registry-starter.vercel.app/r/theme.json"
-      ],
-      "files": [
-        {
-          "path": "src/layouts/minimal-layout.tsx",
-          "type": "registry:file",
-          "target": "app/layout.tsx"
-        }
-      ]
-    },
-    {
-      "name": "slider",
-      "type": "registry:ui",
-      "title": "Slider",
-      "description": "An input where the user selects a value from within a given range.",
-      "registryDependencies": [
-        "slider",
-        "https://registry-starter.vercel.app/r/theme.json"
-      ],
-      "files": [
-        {
-          "path": "src/layouts/minimal-layout.tsx",
-          "type": "registry:file",
-          "target": "app/layout.tsx"
-        }
-      ]
-    },
-    {
-      "name": "sonner",
-      "type": "registry:ui",
-      "title": "Sonner",
-      "description": "An opinionated toast component for React.",
-      "registryDependencies": [
-        "sonner",
-        "https://registry-starter.vercel.app/r/theme.json"
-      ],
-      "files": [
-        {
-          "path": "src/layouts/minimal-layout.tsx",
-          "type": "registry:file",
-          "target": "app/layout.tsx"
-        },
-        {
-          "path": "src/components/ui/sonner.tsx",
-          "type": "registry:file",
-          "target": "components/ui/sonner.tsx"
-        }
-      ]
-    },
-    {
-      "name": "switch",
-      "type": "registry:ui",
-      "title": "Switch",
-      "description": "A control that allows the user to toggle between checked and not checked.",
-      "registryDependencies": [
-        "switch",
-        "https://registry-starter.vercel.app/r/theme.json"
-      ],
-      "files": [
-        {
-          "path": "src/layouts/minimal-layout.tsx",
-          "type": "registry:file",
-          "target": "app/layout.tsx"
-        }
-      ]
-    },
-    {
-      "name": "table",
-      "type": "registry:ui",
-      "title": "Table",
-      "description": "A responsive table component.",
-      "registryDependencies": [
-        "table",
-        "https://registry-starter.vercel.app/r/theme.json"
-      ],
-      "files": [
-        {
-          "path": "src/layouts/minimal-layout.tsx",
-          "type": "registry:file",
-          "target": "app/layout.tsx"
-        }
-      ]
-    },
-    {
-      "name": "tabs",
-      "type": "registry:ui",
-      "title": "Tabs",
-      "description": "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
-      "registryDependencies": [
-        "tabs",
-        "https://registry-starter.vercel.app/r/theme.json"
-      ],
-      "files": [
-        {
-          "path": "src/layouts/minimal-layout.tsx",
-          "type": "registry:file",
-          "target": "app/layout.tsx"
-        }
-      ]
-    },
-    {
-      "name": "toggle-group",
-      "type": "registry:ui",
-      "title": "Toggle Group",
-      "description": "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
-      "registryDependencies": [
-        "toggle-group",
-        "https://registry-starter.vercel.app/r/theme.json"
-      ],
-      "files": [
-        {
-          "path": "src/layouts/minimal-layout.tsx",
-          "type": "registry:file",
-          "target": "app/layout.tsx"
-        }
-      ]
-    },
-    {
-      "name": "tooltip",
-      "type": "registry:ui",
-      "title": "Tooltip",
-      "description": "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
-      "registryDependencies": [
-        "tooltip",
-        "https://registry-starter.vercel.app/r/theme.json"
-      ],
-      "files": [
-        {
-          "path": "src/layouts/minimal-layout.tsx",
-          "type": "registry:file",
-          "target": "app/layout.tsx"
-        }
-      ]
+      "files": []
     }
   ]
 }

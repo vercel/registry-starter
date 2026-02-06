@@ -14,7 +14,6 @@
     "incremental": true,
     "paths": {
       "@/*": ["./src/*"],
-      "@/registry": ["./registry.json"],
     },
     "plugins": [
       {

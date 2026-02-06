@@ -40,7 +40,7 @@ repository's [`registry.json`](./registry.json). For more information, refer to 
 ## Theming
 
 To use a custom theme for all the components, all you need to do is modify the CSS tokens in
-[`globals.css`](./src/app/globals.css). More information on these practices can be found
+[`globals.css`](./app/globals.css). More information on these practices can be found
 on [ui.shadcn.com/docs](https://ui.shadcn.com/docs).
 
 #### Fonts
@@ -48,7 +48,7 @@ on [ui.shadcn.com/docs](https://ui.shadcn.com/docs).
 To use custom fonts, you can either use [
 `next/font/google`](https://nextjs.org/docs/pages/getting-started/fonts#google-fonts) or the 
 [`@font-face`](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face) CSS rule in your 
-[`globals.css`](./src/app/globals.css).
+[`globals.css`](./app/globals.css).
 
 ```css
 @font-face {
@@ -60,7 +60,7 @@ To use custom fonts, you can either use [
 }
 ```
 
-If you use `@font-face`, ensure you modify [`globals.css`](src/app/globals.css) tailwind configuration to map 
+If you use `@font-face`, ensure you modify [`globals.css`](app/globals.css) tailwind configuration to map 
 your custom font variables to Tailwind fonts. Refer to this
 [Tailwind documentation](https://tailwindcss.com/docs/font-family#customizing-your-theme)
 
@@ -87,7 +87,7 @@ This is made possible with an environment variable and basic Next.js Middleware.
 2. Add new `middleware.ts` file to protect `/r/:path` routes
 
     ```ts
-    // src/middleware.ts
+    // middleware.ts
     import { NextResponse } from "next/server";
     import type { NextRequest } from "next/server";
     

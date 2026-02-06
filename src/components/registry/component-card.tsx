@@ -33,6 +33,11 @@ export function ComponentCard({
 }: ComponentCardProps) {
   const [copied, setCopied] = useState(false);
 
+  const isBlock = component.type === "registry:block";
+  const v0RegistryUrl = isBlock
+    ? `https://${baseUrl}/r/${component.name}.json`
+    : `https://${baseUrl}/r/blank.json`;
+
   const registryUrl = `https://${baseUrl}/r/${component.name}.json`;
   const npxCommand = `npx shadcn@latest add ${registryUrl}`;
 
@@ -80,7 +85,7 @@ export function ComponentCard({
                 </TooltipProvider>
 
                 <OpenInV0Button
-                  registryUrl={registryUrl}
+                  registryUrl={v0RegistryUrl}
                   title={`${component.title} Kit`}
                   prompt={prompt}
                 />
