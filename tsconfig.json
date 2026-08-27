@@ -14,21 +14,21 @@
     "incremental": true,
     "paths": {
       "@/*": ["./src/*"],
-      "@/registry": ["./registry.json"],
+      "@/registry": ["./registry.json"]
     },
     "plugins": [
       {
-        "name": "next",
-      },
+        "name": "next"
+      }
     ],
-    "target": "ES2017",
+    "target": "ES2017"
   },
   "include": [
     "**/*.ts",
     "**/*.tsx",
     "next-env.d.ts",
     ".next/types/**/*.ts",
-    ".next/dev/types/**/*.ts",
+    ".next/dev/types/**/*.ts"
   ],
-  "exclude": ["node_modules"],
+  "exclude": ["node_modules"]
 }

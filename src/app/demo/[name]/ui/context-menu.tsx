@@ -2,9 +2,9 @@ import {
   ContextMenu,
   ContextMenuContent,
   ContextMenuItem,
-  ContextMenuTrigger,
   ContextMenuSeparator,
   ContextMenuShortcut,
+  ContextMenuTrigger,
 } from "@/components/ui/context-menu";
 
 export const contextMenu = {

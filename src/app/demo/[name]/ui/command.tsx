@@ -7,7 +7,14 @@ import {
   CommandList,
   CommandSeparator,
 } from "@/components/ui/command";
-import { Calculator, Calendar, CreditCard, Settings, Smile, User } from "lucide-react";
+import {
+  Calculator,
+  Calendar,
+  CreditCard,
+  Settings,
+  Smile,
+  User,
+} from "lucide-react";
 
 export const command = {
   name: "command",
